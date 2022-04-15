@@ -12,7 +12,7 @@ This project is meant as a love letter to the typography of classic arcade games
 - typographic quality was no criteria for inclusion (and there are many bad fonts!)
 - PNG previews
 
-I'm currently not interested in contributions of new fonts. However, if you come across mistakes you are welcome to post an issue or even a pull request.
+I'm currently not interested in contributions of new fonts. However, if you come across mistakes you are welcome to post an [issue](https://github.com/idleberg/playdate-arcade-fonts/issues) or even a [pull request](https://github.com/idleberg/playdate-arcade-fonts/pulls).
 
 **Todo**
 
