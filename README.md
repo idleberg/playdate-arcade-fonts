@@ -1,4 +1,4 @@
-# playdate-arcade-fonts
+# 👾 playdate-arcade-fonts
 
 *This project is work-in-progress*
 
