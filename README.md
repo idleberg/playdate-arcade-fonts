@@ -18,3 +18,5 @@ I'm currently not interested in contributions of new fonts. However, if you come
 
 - add more fonts
 - create website
+
+<a href="https://www.buymeacoffee.com/idleberg" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
