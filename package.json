@@ -16,12 +16,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@carbon/icons-react": "^10.22.0",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
-    "carbon-components": "^10.25.0",
-    "carbon-components-react": "^7.25.0",
-    "carbon-icons": "^7.0.7",
     "gatsby": "^4.12.1",
     "gatsby-plugin-manifest": "^4.12.1",
     "gatsby-plugin-mdx": "^3.12.1",
