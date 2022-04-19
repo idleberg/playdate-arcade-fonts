@@ -3,7 +3,7 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Playdate Arcade Fonts`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://idleberg.github.io/playdate-arcade-fonts/`
   },
   plugins: ["gatsby-plugin-offline", "gatsby-plugin-sass", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
