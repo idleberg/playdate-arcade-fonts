@@ -2,7 +2,15 @@
 Action Hollywood.fnt
 Action Hollywood.png
 
-# Websites
+# Dependencies
 node_modules/
-.cache/
-public
+
+# Build
+/build
+/.svelte-kit
+/package
+
+# Development
+.env
+.env.*
+!.env.example
