@@ -3,7 +3,7 @@
 
     const publicFonts = sortByKey(page.content.filter(item => item.public), 'name');
 
-    function sortByKey(arr: Record<string, any>) {
+    function sortByKey(arr) {
         return arr.sort((a, b) =>  {
             let x = a['name'];
             let y = b['name'];
