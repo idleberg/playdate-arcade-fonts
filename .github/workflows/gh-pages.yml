@@ -15,7 +15,7 @@ jobs:
         uses: actions/setup-node@v2.1.2
         with:
           fetch-depth: 1
-          node-version: 'lts/*'
+          node-version: '16'
 
       - name: Cache pnpm modules
         uses: actions/cache@v2
