@@ -19,9 +19,9 @@
     <section>
         <h1>{font.name}</h1>
 
-        <a href={`${process.env.GH_PAGES_URL}/fonts/${encodeURIComponent(font.category)}/${encodeURIComponent(font.name)}.fnt`} download>
+        <a href={`${import.meta.env.GH_PAGES_URL}/fonts/${encodeURIComponent(font.category)}/${encodeURIComponent(font.name)}.fnt`} download>
           <img
-            src={`${process.env.GH_PAGES_URL}/previews/${font.category}/${font.name}.png`}
+            src={`${import.meta.env.GH_PAGES_URL}/previews/${font.category}/${font.name}.png`}
             alt={`Preview showing characters of the ${font.name} bitmap font.`}
             loading="lazy"
             fetchpriority={index < 10 ? 'high' : 'auto'}
