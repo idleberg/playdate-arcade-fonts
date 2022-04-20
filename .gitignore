@@ -8,6 +8,7 @@ node_modules/
 # Build
 /build
 /.svelte-kit
+/.cache
 /package
 
 # Development
