@@ -1,7 +1,16 @@
-<script language="typescript">
+<script lang="typescript">
     import page from '../meta.json';
 
-    const publicFonts = page.content.filter(item => item.public);
+    const publicFonts = sortByKey(page.content.filter(item => item.public), 'name');
+
+    function sortByKey(arr: Record<string, any>) {
+        return arr.sort((a, b) =>  {
+            let x = a['name'];
+            let y = b['name'];
+
+            return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+        });
+    }
 </script>
 
 <h1>{page.title}</h1>
@@ -10,9 +19,9 @@
     <section>
         <h1>{font.name}</h1>
 
-        <a href={`fonts/${encodeURIComponent(font.category)}/${encodeURIComponent(font.name)}.fnt`} download>
+        <a href={`./fonts/${encodeURIComponent(font.category)}/${encodeURIComponent(font.name)}.fnt`} download>
           <img
-            src={`previews/${font.category}/${font.name}.png`}
+            src={`./previews/${font.category}/${font.name}.png`}
             alt={`Preview showing characters of the ${font.name} bitmap font.`}
             loading="lazy"
             fetchpriority={index < 10 ? 'high' : 'auto'}
