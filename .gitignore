@@ -6,9 +6,9 @@ Action Hollywood.png
 node_modules/
 
 # Build
-/build
-/.svelte-kit
 /.cache
+/.svelte-kit
+/build
 /package
 
 # Development
