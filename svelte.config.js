@@ -12,10 +12,10 @@ const config = {
 	kit: {
 		adapter: adapter({
 			fallback: 'index.html'
-		})
-	},
-	paths: {
-		base: dev ? '' : '/playdate-arcade-fonts'
+		}),
+		paths: {
+			base: dev ? '' : '/playdate-arcade-fonts'
+		}
 	}
 };
 
