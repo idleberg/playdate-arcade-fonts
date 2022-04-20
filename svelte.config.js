@@ -15,7 +15,7 @@ const config = {
 		})
 	},
 	paths: {
-		base: process.env.NODE_ENV === 'production' ? '/playdate-arcade-fonts' : '/';
+		base: process.env.NODE_ENV === 'production' ? '/playdate-arcade-fonts' : '/'
 	}
 };
 
