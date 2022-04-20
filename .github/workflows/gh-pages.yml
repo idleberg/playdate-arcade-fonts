@@ -35,7 +35,7 @@ jobs:
       - name: Build
         run: pnpm run build
         env:
-          GH_PAGES_URL: https://idleberg.github.io/playdate-arcade-fonts
+          VITE_HOMEPAGE: https://idleberg.github.io/playdate-arcade-fonts
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
