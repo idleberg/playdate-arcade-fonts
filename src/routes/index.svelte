@@ -34,8 +34,8 @@
 
 <style>
     img {
-        width: 400px;
-        height: auto;
+        width: auto;
+        height: 72px;
         image-rendering: pixelated;
     }
 </style>
