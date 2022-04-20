@@ -10,9 +10,9 @@
     <section>
         <h1>{font.name}</h1>
 
-        <a href={`/fonts/${encodeURIComponent(font.category)}/${encodeURIComponent(font.name)}.fnt`} download>
+        <a href={`fonts/${encodeURIComponent(font.category)}/${encodeURIComponent(font.name)}.fnt`} download>
           <img
-            src={`/previews/${font.category}/${font.name}.png`}
+            src={`previews/${font.category}/${font.name}.png`}
             alt={`Preview showing characters of the ${font.name} bitmap font.`}
             loading="lazy"
             fetchpriority={index < 10 ? 'high' : 'auto'}
