@@ -6,6 +6,8 @@ specifiers:
   '@sveltejs/kit': next
   '@typescript-eslint/eslint-plugin': ^5.10.1
   '@typescript-eslint/parser': ^5.10.1
+  carbon-components-svelte: ^0.63.1
+  carbon-icons-svelte: ^11.0.1
   eslint: ^7.32.0
   eslint-config-prettier: ^8.3.0
   eslint-plugin-svelte3: ^3.2.1
@@ -18,11 +20,13 @@ specifiers:
   typescript: ~4.6.2
 
 devDependencies:
-  '@sveltejs/adapter-auto': 1.0.0-next.34
+  '@sveltejs/adapter-auto': 1.0.0-next.35
   '@sveltejs/adapter-static': 1.0.0-next.29
-  '@sveltejs/kit': 1.0.0-next.316_svelte@3.47.0
+  '@sveltejs/kit': 1.0.0-next.317_svelte@3.47.0
   '@typescript-eslint/eslint-plugin': 5.20.0_4a38537b28d61fb150842b8115287657
   '@typescript-eslint/parser': 5.20.0_eslint@7.32.0+typescript@4.6.3
+  carbon-components-svelte: 0.63.1
+  carbon-icons-svelte: 11.0.1
   eslint: 7.32.0
   eslint-config-prettier: 8.5.0_eslint@7.32.0
   eslint-plugin-svelte3: 3.4.1_eslint@7.32.0+svelte@3.47.0
@@ -121,23 +125,23 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/adapter-auto/1.0.0-next.34:
-    resolution: {integrity: sha512-BzZVfy39idFojauroLrE/v9paJ1/HOlS2R857ooCwaLg+RrRy6zJHWwYxNSv5e8AaZiVg7ioZZpU/2g6ZgUpaQ==}
+  /@sveltejs/adapter-auto/1.0.0-next.35:
+    resolution: {integrity: sha512-x0FLfs1c22lckDuO3Lqq++MQXw8vlKpNCj+AeYtK8EmGfQH3qHTxjPqLWzp/qcTkEx9c+UZyoZsJsGXBwISdFw==}
     dependencies:
-      '@sveltejs/adapter-cloudflare': 1.0.0-next.17
-      '@sveltejs/adapter-netlify': 1.0.0-next.51
-      '@sveltejs/adapter-vercel': 1.0.0-next.47
+      '@sveltejs/adapter-cloudflare': 1.0.0-next.18
+      '@sveltejs/adapter-netlify': 1.0.0-next.52
+      '@sveltejs/adapter-vercel': 1.0.0-next.48
     dev: true
 
-  /@sveltejs/adapter-cloudflare/1.0.0-next.17:
-    resolution: {integrity: sha512-B2ze5L0LsHFsZctVNy4sw0XxgV2YiVEHyMrWRo3pmpTwpu6GT5V3U2fsEoCMg/RKMazlWkyKTCuUqmcpYjjf2g==}
+  /@sveltejs/adapter-cloudflare/1.0.0-next.18:
+    resolution: {integrity: sha512-iIb7ScN2hnnfVQPhRjw0FYpovYJrw4n22BFAQIg6QvOwmmGz1E3QkyBkm/tRmyY7emDfnljgXtvk4Hsoszp5Ug==}
     dependencies:
       esbuild: 0.14.36
       worktop: 0.8.0-next.12
     dev: true
 
-  /@sveltejs/adapter-netlify/1.0.0-next.51:
-    resolution: {integrity: sha512-P7/cW/0z8zd8J6DOI2yxKZG0+HRMMuzfOf0yzFXX0vRwBePhKlZ/H4qhTOo2NrCmj3Len545o+ugj5gyMXl1+g==}
+  /@sveltejs/adapter-netlify/1.0.0-next.52:
+    resolution: {integrity: sha512-QvlPSaU09mPY6eNgvqWct/KnZqr1MdyydUM/CF3c6fgwwqTPrxLdxqjLADSLNhbzjk1BMwx1uydVM0pvkoBC7Q==}
     dependencies:
       '@iarna/toml': 2.2.5
       esbuild: 0.14.36
@@ -150,14 +154,14 @@ packages:
       tiny-glob: 0.2.9
     dev: true
 
-  /@sveltejs/adapter-vercel/1.0.0-next.47:
-    resolution: {integrity: sha512-VV3vP8KqL9XOc7xfQLVhXTM5jrTme+r1qJy98u5/dhAhkdjqrGDwAKo/s7MoB3rTYxLb2b8I4QxAaoz2Y2aIBg==}
+  /@sveltejs/adapter-vercel/1.0.0-next.48:
+    resolution: {integrity: sha512-l1CXPI8J6guIqEavyTpDdNVzpf1Tmi2QxnvuPIl4uotaAwOTSKE2mMSoAe9zZ3pINjmhxtFX0Uhb+6Dm0O55vQ==}
     dependencies:
       esbuild: 0.14.36
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.316_svelte@3.47.0:
-    resolution: {integrity: sha512-oLjWOWzjriJD2t210r7ALuH/8ZADrJGsOODzRCRSJvRBCt0Q7VKVLqwKbM/RlZzD1k8Af2uRodQT11kP98hAIA==}
+  /@sveltejs/kit/1.0.0-next.317_svelte@3.47.0:
+    resolution: {integrity: sha512-04WqvYXfz4THy3HghkXYWNrbG6bMLaQTaTfGNMoGpoSUaboJ1enikReeD+9bt4AzxqWkLav+C6Q3NgwJXwYAiw==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
@@ -451,6 +455,16 @@ packages:
   /callsites/3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
+    dev: true
+
+  /carbon-components-svelte/0.63.1:
+    resolution: {integrity: sha512-gB6qGalCXG87nFiPp6KzBAjTDFjZm8vcOTBa7gQFDtwL5TzM4oeg8zHxqPSpPuNJvVym/3AlVNnvHbZBRomBzQ==}
+    dependencies:
+      flatpickr: 4.6.9
+    dev: true
+
+  /carbon-icons-svelte/11.0.1:
+    resolution: {integrity: sha512-0CCJLmHW3yJ8T9DM2HNGQx304b2VLGY13Xeg6T1cJWeU2oTPIvBbTfveChIULBBI9FIFGLB9m8ZZgeYWEjAAew==}
     dev: true
 
   /chalk/2.4.2:
@@ -993,6 +1007,10 @@ packages:
     dependencies:
       flatted: 3.2.5
       rimraf: 3.0.2
+    dev: true
+
+  /flatpickr/4.6.9:
+    resolution: {integrity: sha512-F0azNNi8foVWKSF+8X+ZJzz8r9sE1G4hl06RyceIaLvyltKvDl6vqk9Lm/6AUUCi5HWaIjiUbk7UpeE/fOXOpw==}
     dev: true
 
   /flatted/3.2.5:
