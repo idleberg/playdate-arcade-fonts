@@ -15,3 +15,7 @@ node_modules/
 .env
 .env.*
 !.env.example
+TODO.md
+
+# Temporary
+src/routes/font/
