@@ -9,7 +9,7 @@
 </Row>
 
 <style>
-    :global(.center {)
+    :global(.center) {
         text-align: center;
     }
 </style>
