@@ -1,7 +1,10 @@
 <script lang="ts">
     import store from '$lib/store';
     import { onMount } from 'svelte';
+
+    // Components
     import { Button, Column, Loading, Row, Tag, Search } from "carbon-components-svelte";
+    import Download from "carbon-icons-svelte/lib/Download.svelte";
 
     let value: string = '';
     let isLoading = true;
@@ -59,8 +62,9 @@
                 <Row>
                     <Column padding>
                         <!-- <Button href={`/font/${font.name}`} size="small" kind="ghost">Try</Button> -->
-                        <Button href={`${import.meta.env.VITE_HOMEPAGE}/fonts/${font.category}/${font.name}.fnt`} download={`${font.name}.fnt`} size="small" kind="ghost">Download</Button>
-                        <Button href={`https://github.com/idleberg/playdate-arcade-fonts/tree/main/static/fonts/${encodeURIComponent(font.category)}/${encodeURIComponent(font.name)}.fnt`} size="small" kind="ghost">Source</Button>
+                        <Button href={`${import.meta.env.VITE_HOMEPAGE}/fonts/${font.category}/${font.name} (fixed width).fnt`} download={`${font.name} (auto-sized).fnt`} size="small" icon={Download}>Auto-sized</Button>
+                        <Button href={`${import.meta.env.VITE_HOMEPAGE}/fonts/${font.category}/${font.name}.fnt`} download={`${font.name} (fixed width).fnt`} size="small" icon={Download}>Fixed width</Button>
+                        <!-- <Button href={`https://github.com/idleberg/playdate-arcade-fonts/tree/main/static/fonts/${encodeURIComponent(font.category)}/${encodeURIComponent(font.name)}.fnt`} size="small" kind="ghost">Source</Button> -->
                     </Column>
                 </Row>
             </Column>
