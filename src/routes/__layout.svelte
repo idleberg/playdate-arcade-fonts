@@ -11,7 +11,7 @@
     import Header from '../components/Header.svelte';
     
     onMount(() => {
-        store.set(sortByKey(page.content));
+        store.set(sortByKey(page.content).filter(item => item.public));
     });
 </script>
 
