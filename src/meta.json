@@ -22,6 +22,28 @@
             }
         },
         {
+            "name": "Action Hollywood",
+            "category": "Horizontal Stress",
+            "size": "8x8",
+            "public": false,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": [
+                    "U",
+                    "V",
+                    "W",
+                    "X",
+                    "Y",
+                    "Z"
+                ]
+            }
+        },
+        {
             "name": "Afterburner",
             "category": "Sans Regular",
             "size": "8x8",
