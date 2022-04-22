@@ -4,6 +4,8 @@
 
 This project is meant as a love letter to the typography of classic arcade games. It contains a growing collection of bitmap fonts that were hand-drawn with [Toshi Omagari's](https://twitter.com/tosche_e) magnificent book [Arcade Game Typography](https://readonlymemory.vg/shop/book/arcade-game-typography/) as reference. And while these fonts have been made with [Playdate](https://play.date/) in mind, they can be used for anything that supports *.fnt files.
 
+[Browse all included fonts](https://idleberg.github.io/playdate-arcade-fonts)
+
 **Checklist**
 
 - all fonts are 8x8 pixels, in most cases with a padding of 1px
