@@ -62,8 +62,13 @@
                 <Row>
                     <Column padding>
                         <!-- <Button href={`/font/${font.name}`} size="small" kind="ghost">Try</Button> -->
-                        <Button href={`${import.meta.env.VITE_HOMEPAGE}/fonts/${font.category}/${font.name} (fixed width).fnt`} download={`${font.name} (auto-sized).fnt`} size="small" kind="ghost" icon={Download}>Auto-sized</Button>
-                        <Button href={`${import.meta.env.VITE_HOMEPAGE}/fonts/${font.category}/${font.name}.fnt`} download={`${font.name} (fixed width).fnt`} size="small" kind="ghost" icon={Download}>Fixed width</Button>
+                        {#if (font.features.variants)}
+                            <Button href={`${import.meta.env.VITE_HOMEPAGE}/fonts/${font.category}/${font.name} (fixed width).fnt`} download={`${font.name} (auto-sized).fnt`} size="small" kind="ghost" icon={Download}>Auto-sized</Button>
+                            <Button href={`${import.meta.env.VITE_HOMEPAGE}/fonts/${font.category}/${font.name}.fnt`} download={`${font.name} (fixed width).fnt`} size="small" kind="ghost" icon={Download}>Fixed width</Button>
+                        {:else}
+                            <Button href={`${import.meta.env.VITE_HOMEPAGE}/fonts/${font.category}/${font.name}.fnt`} download={`${font.name}.fnt`} size="small" kind="ghost" icon={Download}>Download</Button>
+                        {/if}
+                        
                         <!-- <Button href={`https://github.com/idleberg/playdate-arcade-fonts/tree/main/static/fonts/${encodeURIComponent(font.category)}/${encodeURIComponent(font.name)}.fnt`} size="small" kind="ghost">Source</Button> -->
                     </Column>
                 </Row>
