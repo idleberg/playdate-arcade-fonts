@@ -45,6 +45,9 @@
                     <Column>
                         <div>
                             <h2>{font.name}</h2>
+                            {#if (font.features.missing.length)}
+                                <Tag type="red">Incomplete</Tag>
+                            {/if}
                             <Tag type="outline">{font.category}</Tag>
                         </div>
                             
