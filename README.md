@@ -7,6 +7,7 @@ This project is meant as a love letter to the typography of classic arcade games
 **Checklist**
 
 - all fonts are 8x8 pixels, in most cases with a padding of 1px
+- all fonts only cover basic latin characters
 - most fonts have a limited character range (`[0-9A-Z]`, rarely including lowercase characters)
 - complex fonts with colors have been excluded, some have been added as outlined or filled fonts
 - typographic quality was no criteria for inclusion (and there are many bad fonts!)
@@ -17,6 +18,5 @@ I'm currently not interested in contributions of new fonts. However, if you come
 **Todo**
 
 - add more fonts
-- create website
 
 <a href="https://www.buymeacoffee.com/idleberg" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
