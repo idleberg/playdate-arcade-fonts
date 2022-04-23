@@ -45,11 +45,12 @@
                     <Column>
                         <div>
                             <h2>{font.name}</h2>
-                            {#if (font.features.missing.length)}
-                                <Tag type="red">Incomplete</Tag>
-                            {/if}
                             
                             <Tag type="cool-gray">{font.category}</Tag>
+
+                            {#if (font.features.missing.length)}
+                                <Tag type="red">incomplete</Tag>
+                            {/if}
                             
                             {#if (font.features.uppercase)}
                                 <Tag type="outline">uppercase</Tag>
