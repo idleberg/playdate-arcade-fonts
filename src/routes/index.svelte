@@ -49,7 +49,7 @@
                                 <Tag type="red">Incomplete</Tag>
                             {/if}
                             
-                            <Tag type="blue">{font.category}</Tag>
+                            <Tag type="cool-gray">{font.category}</Tag>
                             
                             {#if (font.features.uppercase)}
                                 <Tag type="outline">uppercase</Tag>
