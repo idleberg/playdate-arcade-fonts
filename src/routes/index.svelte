@@ -48,7 +48,20 @@
                             {#if (font.features.missing.length)}
                                 <Tag type="red">Incomplete</Tag>
                             {/if}
-                            <Tag type="outline">{font.category}</Tag>
+                            
+                            <Tag type="blue">{font.category}</Tag>
+                            
+                            {#if (font.features.uppercase)}
+                                <Tag type="outline">uppercase</Tag>
+                            {/if}
+                            
+                            {#if (font.features.lowercase)}
+                                <Tag type="outline">lowercase</Tag>
+                            {/if}
+                            
+                            {#if (font.features.digits)}
+                                <Tag type="outline">digits</Tag>
+                            {/if}
                         </div>
                             
                         <!-- <a href={`/font/${font.name}`}> -->
