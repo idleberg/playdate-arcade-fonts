@@ -47,7 +47,7 @@
                     <Column lg={16}>
                         <Tags {font} />
 
-                        <!-- <a href={`${import.meta.env.VITE_HOMEPAGE}/details/${encodeURIComponent(font.name)}`}> -->
+                        <a href={`${import.meta.env.VITE_HOMEPAGE}/details/${encodeURIComponent(font.name)}`}>
                             <div class="preview zoom-4x" style={`--backgroundImage: url("${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeURIComponent(font.name)}.png")`}>
                                 {#each letters as character}
                                     <span data-glyph={character}>{character}</span>
@@ -57,7 +57,7 @@
                                     <span data-glyph={character}>{character}</span>
                                 {/each}
                             </div>
-                        <!-- </a> -->
+                        </a>
                     </Column>
                 </Row>
 
