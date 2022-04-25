@@ -47,7 +47,7 @@
                     <Column lg={16}>
                         <Tags {font} />
 
-                        <a href={`${import.meta.env.VITE_HOMEPAGE}/font/${encodeURIComponent(font.name)}`}>
+                        <!-- <a href={`${import.meta.env.VITE_HOMEPAGE}/font/${encodeURIComponent(font.name)}`}> -->
                             <div class="preview zoom-4x" style={`--backgroundImage: url("${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeURIComponent(font.name)}.png")`}>
                                 {#each letters as character}
                                     <span data-glyph={character}>{character}</span>
@@ -57,13 +57,14 @@
                                     <span data-glyph={character}>{character}</span>
                                 {/each}
                             </div>
-                        </a>
+                        <!-- </a> -->
                     </Column>
                 </Row>
 
                 <Row>
                     <Column padding>
-                        <Button href={`${import.meta.env.VITE_HOMEPAGE}/font/${font.name}`} size="small">Details</Button>
+                        <!-- <Button href={`${import.meta.env.VITE_HOMEPAGE}/font/${font.name}`} size="small">Details</Button> -->
+                        <Button href={`${import.meta.env.VITE_HOMEPAGE}/fonts/${font.name} (fixed-width).fnt`} size="small">Download</Button>
                         <Button href={`https://github.com/idleberg/playdate-arcade-fonts/tree/main/static/fonts/${encodeURIComponent(font.category)}/${encodeURIComponent(font.name)}.fnt`} size="small" kind="ghost">Source</Button>
                     </Column>
                 </Row>
