@@ -63,7 +63,7 @@
 
                 <Row>
                     <Column padding>
-                        <Button href={`/font/${font.name}`} size="small">Details</Button>
+                        <Button href={`${import.meta.env.VITE_HOMEPAGE}/font/${font.name}`} size="small">Details</Button>
                         <Button href={`https://github.com/idleberg/playdate-arcade-fonts/tree/main/static/fonts/${encodeURIComponent(font.category)}/${encodeURIComponent(font.name)}.fnt`} size="small" kind="ghost">Source</Button>
                     </Column>
                 </Row>
