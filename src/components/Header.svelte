@@ -4,7 +4,14 @@
 
 <Row>
     <Column padding>
-        <h1>Playdate Arcade Fonts</h1>
+        <a href={import.meta.env.BASE_URL}><h1>Playdate Arcade Fonts</h1></a>
         <p>A collection of bitmap fonts for Playdate</p>
     </Column>
 </Row>
+
+<style>
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+</style>

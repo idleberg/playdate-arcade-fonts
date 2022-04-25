@@ -3,12 +3,14 @@
     import { onMount } from 'svelte';
 
     // Components
-    import { Button, Column, Loading, Row, Tag, Search } from "carbon-components-svelte";
-    import Download from "carbon-icons-svelte/lib/Download.svelte";
+    import { Button, Column, Loading, Row,  Search } from "carbon-components-svelte";
+    import Tags from '../components/Tags.svelte';
 
     let value: string = '';
     let isLoading = true;
     let publicFonts: Record<string, any>[] = [];
+    let letters = "ABCDEFGHIJKLMNOPQ".split("")
+    let numbers = "0123456789".split("")
 
     onMount(() => {
         isLoading = false;
@@ -42,74 +44,27 @@
         {#each publicFonts as font, index}
             <Column padding>
                 <Row>
-                    <Column>
-                        <div>
-                            <h2>{font.name}</h2>
-                            
-                            <Tag type="cool-gray">{font.category}</Tag>
+                    <Column lg={16}>
+                        <Tags {font} />
 
-                            {#if (font.features.missing.length)}
-                                <Tag type="red">incomplete</Tag>
-                            {/if}
-                            
-                            {#if (font.features.uppercase)}
-                                <Tag type="outline">uppercase</Tag>
-                            {/if}
-                            
-                            {#if (font.features.lowercase)}
-                                <Tag type="outline">lowercase</Tag>
-                            {/if}
-                            
-                            {#if (font.features.digits)}
-                                <Tag type="outline">digits</Tag>
-                            {/if}
-                        </div>
-                            
-                        <!-- <a href={`/font/${font.name}`}> -->
-                        <img
-                            src={`${import.meta.env.VITE_HOMEPAGE}/previews/${font.category}/${font.name}.png`}
-                            alt={`Preview showing characters of the ${font.name} bitmap font.`}
-                            loading="lazy"
-                            fetchpriority={index < 10 ? 'high' : 'auto'}
-                        />
-                        <!-- </a> -->
+                        <a href={`/font/${font.name}`}>
+                            <div class="preview zoom-4x" style={`--backgroundImage: url("${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeURIComponent(font.name)}.png")`}>
+                                {#each letters as character}
+                                    <span data-glyph={character}>{character}</span>
+                                {/each}
+                                <br />
+                                {#each numbers as character}
+                                    <span data-glyph={character}>{character}</span>
+                                {/each}
+                            </div>
+                        </a>
                     </Column>
                 </Row>
 
                 <Row>
                     <Column padding>
-                        <!-- <Button href={`/font/${font.name}`} size="small" kind="ghost">Try</Button> -->
-                        {#if (font.features.variants)}
-                            <Button
-                                href={`${import.meta.env.VITE_HOMEPAGE}/fonts/${font.category}/${font.name} (fixed width).fnt`}
-                                download={`${font.name} (fixed width).fnt`}
-                                size="small"
-                                kind="ghost"
-                                icon={Download}
-                            >Fixed width</Button>
-                            <Button
-                                href={`${import.meta.env.VITE_HOMEPAGE}/fonts/${font.category}/${font.name} (auto-sized).fnt`}
-                                download={`${font.name} (auto-sized).fnt`}
-                                size="small"
-                                kind="ghost"
-                                icon={Download}
-                            >Auto-sized</Button>
-                        {:else}
-                            <Button
-                                href={`${import.meta.env.VITE_HOMEPAGE}/fonts/${font.category}/${font.name}.fnt`}
-                                download={`${font.name} (fixed width).fnt`}
-                                size="small"
-                                kind="ghost"
-                                icon={Download}
-                            >Fixed width</Button>
-                            <Button
-                                size="small"
-                                kind="ghost"
-                                icon={Download}
-                                disabled
-                            >Auto-sized</Button>
-                        {/if}
-                        <!-- <Button href={`https://github.com/idleberg/playdate-arcade-fonts/tree/main/static/fonts/${encodeURIComponent(font.category)}/${encodeURIComponent(font.name)}.fnt`} size="small" kind="ghost">Source</Button> -->
+                        <Button href={`/font/${font.name}`} size="small">Details</Button>
+                        <Button href={`https://github.com/idleberg/playdate-arcade-fonts/tree/main/static/fonts/${encodeURIComponent(font.category)}/${encodeURIComponent(font.name)}.fnt`} size="small" kind="ghost">Source</Button>
                     </Column>
                 </Row>
             </Column>
@@ -127,12 +82,11 @@
 </Row>
 
 <style>
-    img {
-        height: 108px;
-        image-rendering: pixelated;
-        width: auto;
+    .preview {
+        padding: 1rem 0;
+        width: 320px;
+        height: 100%;
     }
-
     :global(.center) {
         display: flex;
         justify-content: center;
