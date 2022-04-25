@@ -63,7 +63,6 @@
         background-repeat: no-repeat;
         content-visibility: hidden;
         display: inline-block;
-        color: transparent;
         height: calc(var(--size) * var(--multiplier));
         image-rendering: pixelated;
         width: calc(var(--size) * var(--multiplier));
