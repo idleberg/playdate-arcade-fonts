@@ -47,7 +47,7 @@
                     <Column lg={16}>
                         <Tags {font} />
 
-                        <!-- <a href={`${import.meta.env.VITE_HOMEPAGE}/font/${encodeURIComponent(font.name)}`}> -->
+                        <!-- <a href={`${import.meta.env.VITE_HOMEPAGE}/details/${encodeURIComponent(font.name)}`}> -->
                             <div class="preview zoom-4x" style={`--backgroundImage: url("${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeURIComponent(font.name)}.png")`}>
                                 {#each letters as character}
                                     <span data-glyph={character}>{character}</span>
@@ -63,7 +63,7 @@
 
                 <Row>
                     <Column padding>
-                        <!-- <Button href={`${import.meta.env.VITE_HOMEPAGE}/font/${font.name}`} size="small">Details</Button> -->
+                        <!-- <Button href={`${import.meta.env.VITE_HOMEPAGE}/details/${font.name}`} size="small">Details</Button> -->
                         <Button href={`${import.meta.env.VITE_HOMEPAGE}/fonts/${font.name} (fixed width).fnt`} download size="small">Download</Button>
                         <Button href={`https://github.com/idleberg/playdate-arcade-fonts/tree/main/static/fonts/${encodeURIComponent(font.category)}`} size="small" kind="ghost">Source</Button>
                     </Column>
