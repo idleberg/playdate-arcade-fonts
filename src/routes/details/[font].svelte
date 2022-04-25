@@ -4,7 +4,7 @@
     import page from '../../meta.json';
     
     // Components
-    import { Button, Column, Row, TextInput, Tile } from "carbon-components-svelte";
+    import { Button, Column, Row, TextInput } from "carbon-components-svelte";
     import Code from "carbon-icons-svelte/lib/Code.svelte";
     import Download from "carbon-icons-svelte/lib/Download.svelte";
     import Tags from '../../components/Tags.svelte';
