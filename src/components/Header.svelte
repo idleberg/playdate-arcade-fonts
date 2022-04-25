@@ -4,7 +4,7 @@
 
 <Row>
     <Column padding>
-        <a href={import.meta.env.BASE_URL}><h1>Playdate Arcade Fonts</h1></a>
+        <a href="/"><h1>Playdate Arcade Fonts</h1></a>
         <p>A collection of bitmap fonts for Playdate</p>
     </Column>
 </Row>
