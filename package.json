@@ -2,6 +2,7 @@
   "name": "playdate-arcade-fonts",
   "version": "0.0.1",
   "scripts": {
+    "type": "module",
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
@@ -11,6 +12,9 @@
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+  },
+  "dependencies": {
+    "fastest-levenshtein": "^1.0.12"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
@@ -31,9 +35,5 @@
     "svelte-preprocess": "^4.10.1",
     "tslib": "^2.3.1",
     "typescript": "~4.6.2"
-  },
-  "type": "module",
-  "dependencies": {
-    "fastest-levenshtein": "^1.0.12"
   }
 }
