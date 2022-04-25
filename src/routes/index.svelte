@@ -50,11 +50,11 @@
                         <a href={`${import.meta.env.VITE_HOMEPAGE}/details/${encodeURIComponent(font.name)}`}>
                             <div class="preview zoom-4x" style={`--backgroundImage: url("${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeURIComponent(font.name)}.png")`}>
                                 {#each letters as character}
-                                    <span data-glyph={character}>{character}</span>
+                                    <span data-glyph={character} arial-label={character}></span>
                                 {/each}
                                 <br />
                                 {#each numbers as character}
-                                    <span data-glyph={character}>{character}</span>
+                                    <span data-glyph={character} arial-label={character}></span>
                                 {/each}
                             </div>
                         </a>
