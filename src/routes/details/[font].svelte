@@ -32,7 +32,7 @@
                 if (character === '\n') {
                     html.push('<br>');
                 } else {
-                    html.push(`<span data-glyph="${character}">${character}</span>`);
+                    html.push(`<span data-glyph="${character}" arial-label=${character}></span>`);
                 }
             }
         });
