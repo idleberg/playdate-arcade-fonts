@@ -1,8 +1,8 @@
 {
   "name": "playdate-arcade-fonts",
   "version": "0.0.1",
+  "type": "module",
   "scripts": {
-    "type": "module",
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
