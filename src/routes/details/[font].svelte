@@ -124,6 +124,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        height: 155px;
         line-height: var(--size);
         overflow: hidden;
         white-space: nowrap;
