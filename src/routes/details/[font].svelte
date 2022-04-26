@@ -43,6 +43,10 @@
     }
 </script>
 
+<svelte:head>
+  <title>{`${font.name} | Playdate Arcade Fonts`}</title>
+</svelte:head>
+
 <div style={`--backgroundImage: url("${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeURIComponent(font.name)}.png")`}>
     <!-- <Row>
         <Column padding>
