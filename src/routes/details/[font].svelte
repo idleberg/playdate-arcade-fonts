@@ -85,7 +85,6 @@
                     <li class="zoom-2x" bind:this={previewArea2x}></li>
                     <li class="zoom-4x" bind:this={previewArea4x}></li>
                 </ul>
-                <small>The text above</small>
             </Column>
         </Row>
 
