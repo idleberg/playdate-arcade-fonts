@@ -7,7 +7,7 @@
 <div>
     <h2>{font.name}</h2>
     
-    <Tag type="cool-gray">{font.category}</Tag>
+    <Tag type="gray">{font.category}</Tag>
 
     {#if (font.features.missing.length)}
         <Tag type="red">incomplete</Tag>
