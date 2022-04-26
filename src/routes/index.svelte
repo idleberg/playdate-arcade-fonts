@@ -35,7 +35,7 @@
 
 <Row>
     <Column padding lg={6} md={4} sm={8}>
-        <Search placeholder={`Search ${publicFonts.length} fonts by name...`} bind:value on:input={changeHandler} on:clear={clearHandler} autofocus />
+        <Search placeholder={`Search ${publicFonts.length} fonts by name or category...`} bind:value on:input={changeHandler} on:clear={clearHandler} autofocus />
     </Column>
 </Row>
 
