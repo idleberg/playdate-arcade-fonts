@@ -61,12 +61,12 @@
 
         background-image: var(--backgroundImage);
         background-repeat: no-repeat;
+        background-size: calc(var(--multiplier) * 148px);
         content-visibility: hidden;
         display: inline-block;
         height: calc(var(--size) * var(--multiplier));
         image-rendering: pixelated;
         width: calc(var(--size) * var(--multiplier));
-        background-size: calc(var(--multiplier) * 148px);
     }
 
     /* Row 1 */
