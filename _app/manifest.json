@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-5d63baa1.js",
+    "file": "start-f615a15c.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -40,7 +40,7 @@
     ]
   },
   "src/routes/details/[font].svelte": {
-    "file": "pages/details/_font_.svelte-55d213a5.js",
+    "file": "pages/details/_font_.svelte-4df2b1bd.js",
     "src": "src/routes/details/[font].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
