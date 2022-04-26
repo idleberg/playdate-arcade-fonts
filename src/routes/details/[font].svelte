@@ -115,7 +115,7 @@
                     >Auto-sized</Button>
                 {/if}
                 <Button
-                    href={`https://github.com/idleberg/playdate-arcade-fonts/tree/main/static/fonts/${encodeURIComponent(font.category)}/${encodeURIComponent(font.name)}.fnt`}
+                    href={`https://github.com/idleberg/playdate-arcade-fonts/tree/main/static/fonts/${encodeURIComponent(font.category)}`}
                     kind="tertiary"
                     icon={Code}
                 >Source</Button>
