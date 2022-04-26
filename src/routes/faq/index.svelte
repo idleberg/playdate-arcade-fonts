@@ -93,7 +93,7 @@
 
             <p>
                 All included fonts are part of the public domain and as such they are available under the terms of the
-                <OutboundLink inline href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC0</OutboundLink>
+                <OutboundLink inline href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</OutboundLink>
                 license.
             </p>
         </AccordionItem>
