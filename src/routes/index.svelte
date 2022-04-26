@@ -9,7 +9,7 @@
     let value: string = '';
     let isLoading = true;
     let publicFonts: Record<string, any>[] = [];
-    let letters = "ABCDEFGHIJKLMNOPQRST".split("")
+    let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
     let numbers = "0123456789".split("")
 
     onMount(() => {
