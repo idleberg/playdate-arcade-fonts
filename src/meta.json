@@ -104,6 +104,21 @@
             }
         },
         {
+            "name": "Charlie Ninja",
+            "category": "Horizontal Stress",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": true,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Cheeky Mouse",
             "category": "Sans Regular",
             "size": "8x8",
