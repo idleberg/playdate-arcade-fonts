@@ -23,4 +23,8 @@ I'm currently not interested in contributions of new fonts. However, if you come
 - better filter options on websites
 - option to handle missing characters in details view
 
+## License
+
+All included fonts are licensed under a [Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) license. The website and all code in this repository is licensed under [The MIT License](https://opensource.org/licenses/MIT).
+
 <a href="https://www.buymeacoffee.com/idleberg" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
