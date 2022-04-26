@@ -47,7 +47,7 @@
                     <Column lg={16}>
                         <Tags {font} />
 
-                        <a href={`${import.meta.env.VITE_HOMEPAGE}/details/${encodeURIComponent(font.name)}`}>
+                        <a href={`${import.meta.env.VITE_HOMEPAGE}/try/${encodeURIComponent(font.name)}`}>
                             <div class="preview zoom-4x" style={`--backgroundImage: url("${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeURIComponent(font.name)}.png")`}>
                                 {#each letters as character}
                                     <span data-glyph={character} arial-label={character}></span>
@@ -64,9 +64,9 @@
                 <Row>
                     <Column padding>
                         <Button
-                            href={`${import.meta.env.VITE_HOMEPAGE}/details/${encodeURIComponent(font.name)}`}
+                            href={`${import.meta.env.VITE_HOMEPAGE}/try/${encodeURIComponent(font.name)}`}
                             size="small"
-                        >Details</Button>
+                        >Try</Button>
                         <Button
                             href={`https://github.com/idleberg/playdate-arcade-fonts/tree/main/static/fonts/${encodeURIComponent(font.category)}/${font.name} (fixed width).fnt`}
                             size="small"
