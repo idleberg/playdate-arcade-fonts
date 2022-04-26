@@ -134,6 +134,21 @@
             }
         },
         {
+            "name": "Dark Seal",
+            "category": "Slanted",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": true,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Darwin 4078",
             "category": "Decorative",
             "size": "8x8",
