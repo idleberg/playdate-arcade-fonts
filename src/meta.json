@@ -299,6 +299,21 @@
             }
         },
         {
+            "name": "Gradius",
+            "category": "Sans Light",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Highway Chase",
             "category": "Sans Regular",
             "size": "8x8",
