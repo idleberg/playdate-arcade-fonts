@@ -1,12 +1,11 @@
 <script>
-     import { Column, Row } from "carbon-components-svelte";
-import { MeterAlt } from "carbon-icons-svelte";
+     import { Column, Link, Row } from "carbon-components-svelte";
 </script>
 
 <Row>
     <Column padding>
         <a href={import.meta.env.VITE_HOMEPAGE}><h1>Playdate Arcade Fonts</h1></a>
-        <p>A collection of bitmap fonts for the Playdate</p>
+        <p>A collection of bitmap fonts for the <Link href="https://play.date/">Playdate</Link>, the tiny handheld game system from Panic</p>
     </Column>
 </Row>
 
