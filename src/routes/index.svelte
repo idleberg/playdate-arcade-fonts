@@ -3,7 +3,7 @@
     import { onMount } from 'svelte';
 
     // Components
-    import { Button, Column, Loading, Row,  Search } from "carbon-components-svelte";
+    import { Button, Column, Link, Loading, Row,  Search } from "carbon-components-svelte";
     import Tags from '../components/Tags.svelte';
 
     let value: string = '';
@@ -47,7 +47,7 @@
                     <Column lg={16}>
                         <Tags {font} />
 
-                        <a href={`${import.meta.env.VITE_HOMEPAGE}/try/${encodeURIComponent(font.name)}`}>
+                        <Link href={`${import.meta.env.VITE_HOMEPAGE}/try/${encodeURIComponent(font.name)}`}>
                             <div class="preview zoom-4x" style={`--backgroundImage: url("${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeURIComponent(font.name)}.png")`}>
                                 {#each letters as character}
                                     <span data-glyph={character} arial-label={character}></span>
@@ -57,7 +57,7 @@
                                     <span data-glyph={character} arial-label={character}></span>
                                 {/each}
                             </div>
-                        </a>
+                        </Link>
                     </Column>
                 </Row>
 
