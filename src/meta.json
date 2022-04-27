@@ -681,6 +681,21 @@
             }
         },
         {
+            "name": "Play Girls",
+            "category": "Serif",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Quiz Show",
             "category": "Sans Regular",
             "size": "8x8",
