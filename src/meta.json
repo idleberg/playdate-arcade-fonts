@@ -859,6 +859,21 @@
                 "specials": [],
                 "missing": []
             }
+        },
+        {
+            "name": "X-Men",
+            "category": "Sans Light",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
         }
     ]
 }
