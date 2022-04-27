@@ -45,6 +45,9 @@
 
 <svelte:head>
   <title>{font?.name ? `${font.name} | Playdate Arcade Fonts` : 'Playdate Arcade Fonts'}</title>
+  <meta property="og:title" content="{font?.name ? `${font.name} | Playdate Arcade Fonts` : 'Playdate Arcade Fonts'}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content={font?.name ? `${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeURIComponent(font.name)}.png` : ''} />
 </svelte:head>
 
 {#if font?.name}
