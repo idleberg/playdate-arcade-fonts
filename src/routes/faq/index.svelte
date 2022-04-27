@@ -100,6 +100,16 @@
 
         <AccordionItem open={isDev}>
             <svelte:fragment slot="title">
+              <strong>What's an unused font?</strong>
+            </svelte:fragment>
+
+            <p>
+                A font considered for a game that didn't make it into the final product.
+            </p>
+        </AccordionItem>
+
+        <AccordionItem open={isDev}>
+            <svelte:fragment slot="title">
               <strong>How are these fonts license?</strong>
             </svelte:fragment>
 
