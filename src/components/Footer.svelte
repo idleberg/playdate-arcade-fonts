@@ -14,6 +14,9 @@
             <li>
                 <Link inline href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">License</Link>
             </li>
+            <li>
+                <Link inline href="https://www.buymeacoffee.com/idleberg" target="_blank">Buy me a coffee</Link>
+            </li>
         </ul>
     </Column>
 </Row>
