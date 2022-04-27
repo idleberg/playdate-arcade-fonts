@@ -4,14 +4,30 @@
 
 <Row>
     <Column class="center" padding>
-        <Link href="https://github.com/idleberg/playdate-arcade-fonts" target="_blank">Code on GitHub</Link>
-        |
-        <Link href="/faq">Frequently Asked Questions</Link>
+        <ul>
+            <li>
+                <Link inline href="https://github.com/idleberg/playdate-arcade-fonts" target="_blank">Code on GitHub</Link>
+            </li>
+            <li>
+                <Link inline href="/faq">FAQ</Link>
+            </li>
+            <li>
+                <Link inline href="https://creativecommons.org/publicdomain/zero/1.0/">License</Link>
+            </li>
+        </ul>
     </Column>
 </Row>
 
-<style>
+<style lang="scss">
     :global(.center) {
         text-align: center;
+    }
+
+    ul {
+        display: inline-flex;
+
+        li {
+            padding: 0.25em;
+        }
     }
 </style>
