@@ -8,6 +8,7 @@
     // Components
     import { Grid } from "carbon-components-svelte";
     import Header from '../components/Header.svelte';
+    import Footer from '../components/Footer.svelte';
     
     onMount(() => {
         store.set(sortByKey(page.content).filter(item => item.public));
@@ -16,8 +17,10 @@
 
 <Grid fullWidth>
     <Header />
-
+    
     <slot></slot>
+
+    <Footer />
 </Grid>
 
 <style lang="scss" global>

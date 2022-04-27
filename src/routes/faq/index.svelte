@@ -56,8 +56,8 @@
 
             <p>
                 Fonts are tagged as incomplete, when they lack one or more characters in their supported character range. So when a font supports uppercase letters,
-                but misses single characters, it's incomplete. Font are <em>not</em> tagged as incomplete, when they support the full range of uppercase characters,
-                but no lowercase characters.
+                but misses single ones, it's incomplete. Font are <em>not</em> tagged as incomplete, when they support the full range of uppercase characters,
+                but have no lowercase characters.
             </p>
         </AccordionItem>
 
