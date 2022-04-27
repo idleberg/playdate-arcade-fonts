@@ -12,7 +12,7 @@
                 <Link inline href="/faq">FAQ</Link>
             </li>
             <li>
-                <Link inline href="https://creativecommons.org/publicdomain/zero/1.0/">License</Link>
+                <Link inline href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">License</Link>
             </li>
         </ul>
     </Column>
