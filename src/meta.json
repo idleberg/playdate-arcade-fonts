@@ -497,6 +497,36 @@
             }
         },
         {
+            "name": "Marble Madness [unused #1]",
+            "category": "Sans Bold",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": false,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
+            "name": "Marble Madness [unused #2]",
+            "category": "Sans Light",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": false,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Moonwalker",
             "category": "Sans Regular",
             "size": "8x8",
