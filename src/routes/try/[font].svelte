@@ -28,12 +28,8 @@
         const html: string[] = [];
 
         characters.forEach((character: string) => {
-            if ([...validCharacters, '\n'].includes(character)) {
-                if (character === '\n') {
-                    html.push('<br>');
-                } else {
-                    html.push(`<span data-glyph="${character}" arial-label=${character}></span>`);
-                }
+            if ([...validCharacters].includes(character)) {
+                html.push(`<span data-glyph="${character}" arial-label=${character}></span>`);
             }
         });
 
