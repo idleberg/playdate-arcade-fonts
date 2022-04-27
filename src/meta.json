@@ -452,6 +452,25 @@
             }
         },
         {
+            "name": "Legend of Makai",
+            "category": "Serif",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
+                "specials": [
+                    "!",
+                    "%",
+                    "&"
+                ],
+                "missing": []
+            }
+        },
+        {
             "name": "Line of Fire",
             "category": "Stencil",
             "size": "8x8",
@@ -565,6 +584,21 @@
                 "uppercase": true,
                 "digits": true,
                 "lowercase": true,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
+            "name": "Ninja Gaiden",
+            "category": "Serif",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
                 "variants": true,
                 "outline": false,
                 "specials": [],
