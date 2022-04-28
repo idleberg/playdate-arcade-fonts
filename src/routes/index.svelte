@@ -3,10 +3,14 @@
     import { onMount } from 'svelte';
 
     // Components
-    import { Button, Column, Link, Loading, Row,  Search } from "carbon-components-svelte";
+    import { Button, Checkbox, Column, Link, Loading, Row,  Search, TextInput } from "carbon-components-svelte";
     import Tags from '../components/Tags.svelte';
+import { Split } from 'carbon-icons-svelte';
 
-    let value: string = '';
+    let searchValue: string = '';
+    let showCustomText: boolean = false;
+    // $: checked = false;
+    $: customText = '';
     let isLoading = true;
     let publicFonts: Record<string, any>[] = [];
     let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
@@ -21,8 +25,8 @@
     });
 
     const changeHandler = () => {
-        if (value?.length) {
-            publicFonts = $store.filter(item => item.name.toLowerCase().includes(value.toLowerCase()) || item.category.toLowerCase().includes(value.toLowerCase()));
+        if (searchValue?.length) {
+            publicFonts = $store.filter(item => item.name.toLowerCase().includes(searchValue.toLowerCase()) || item.category.toLowerCase().includes(searchValue.toLowerCase()));
         } else {
             clearHandler();
         }
@@ -31,12 +35,32 @@
     const clearHandler = () => {
         publicFonts = $store;
     }
+
+    const customtextToggle = e => {
+        // showCustomText = e.target.checked;
+    }
+
+    const customtextHandler = e => {
+        customText = e.detail;
+    }
 </script>
 
 <Row>
     <Column padding lg={6} md={4} sm={8}>
-        <Search placeholder={`Search ${publicFonts.length} fonts by name or category...`} bind:value on:input={changeHandler} on:clear={clearHandler} autofocus />
+        <Search placeholder={`Search ${publicFonts.length} fonts by name or category…`} bind:value={searchValue} on:input={changeHandler} on:clear={clearHandler} autofocus />
     </Column>
+
+    <Column padding lg={6} md={4} sm={8}>
+        <Checkbox labelText="Custom Text" bind:checked={showCustomText} />
+    </Column>
+</Row>
+
+<Row>
+    {#if showCustomText}
+        <Column padding lg={6} md={4} sm={8}>
+             <TextInput placeholder="Enter your custom text…" on:input={customtextHandler} autofocus />
+         </Column>
+    {/if}
 </Row>
 
 <Row class="high-row">
@@ -49,13 +73,19 @@
 
                         <Link href={`${import.meta.env.VITE_HOMEPAGE}/try/${encodeURIComponent(font.name)}`}>
                             <div class="preview zoom-4x" style={`--backgroundImage: url("${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeURIComponent(font.name)}.png")`}>
-                                {#each letters as character}
-                                    <span data-glyph={character} arial-label={character}></span>
-                                {/each}
-                                <br />
-                                {#each numbers as character}
-                                    <span data-glyph={character} arial-label={character}></span>
-                                {/each}
+                                {#if showCustomText && customText?.length}
+                                    {#each customText.split('') as character}
+                                        <span data-glyph={character} arial-label={character}></span>
+                                    {/each}
+                                {:else}
+                                    {#each letters as character}
+                                        <span data-glyph={character} arial-label={character}></span>
+                                    {/each}
+                                    <br />
+                                    {#each numbers as character}
+                                        <span data-glyph={character} arial-label={character}></span>
+                                    {/each}
+                                {/if}
                             </div>
                         </Link>
                     </Column>
