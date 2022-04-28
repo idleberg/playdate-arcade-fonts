@@ -882,6 +882,21 @@
             }
         },
         {
+            "name": "The Simpsons",
+            "category": "Calligraphy & Lettering",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Time Pilot '89",
             "category": "Slanted",
             "size": "8x8",
@@ -986,6 +1001,21 @@
                 "lowercase": true,
                 "variants": true,
                 "outline": true,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
+            "name": "Warrior Blade Rastan Saga Episode III",
+            "category": "Calligraphy & Lettering",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
                 "specials": [],
                 "missing": []
             }
