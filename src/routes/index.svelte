@@ -3,8 +3,10 @@
     import { onMount } from 'svelte';
 
     // Components
-    import { Button, Checkbox, Column, Link, Loading, Row,  Search, TextInput } from "carbon-components-svelte";
+    import { Button, Checkbox, Column, Link, Loading, Row, Search, TextInput } from "carbon-components-svelte";
+    import Code from "carbon-icons-svelte/lib/Code.svelte";
     import Tags from '../components/Tags.svelte';
+    import Download from "carbon-icons-svelte/lib/Download.svelte";
 
     let searchValue: string = '';
     let showCustomText: boolean = false;
@@ -102,11 +104,13 @@
                         <Button
                             href={`${import.meta.env.VITE_HOMEPAGE}/try/${encodeURIComponent(font.name)}`}
                             size="small"
+                            icon={Download}
                         >Try</Button>
                         <Button
                             href={`https://github.com/idleberg/playdate-arcade-fonts/tree/main/static/fonts/${encodeURIComponent(font.category)}/${font.name} (fixed width).fnt`}
                             size="small"
                             kind="tertiary"
+                            icon={Code}
                         >Source</Button>
                     </Column>
                 </Row>
