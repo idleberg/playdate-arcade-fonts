@@ -89,6 +89,27 @@
             }
         },
         {
+            "name": "Blandia",
+            "category": "Calligraphy & Lettering",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": [
+                    "1",
+                    "2",
+                    "3",
+                    "J",
+                    "Z"
+                ]
+            }
+        },
+        {
             "name": "Bongo",
             "category": "Sans Regular",
             "size": "8x8",
