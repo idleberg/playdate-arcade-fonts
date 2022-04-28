@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-105dfd11.js",
+    "file": "start-1371c1a7.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -54,7 +54,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-b913d93f.js",
+    "file": "pages/index.svelte-16392df6.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -63,7 +63,7 @@
       "_store-5c38b2b7.js",
       "_Link-e1b4cac7.js",
       "_HeaderSearch.svelte_svelte_type_style_lang-afbcb924.js",
-      "_Tags-3b86fdbb.js",
+      "_Download-37e5f6ac.js",
       "_index-1a6227ed.js"
     ],
     "css": [
@@ -71,7 +71,7 @@
     ]
   },
   "src/routes/try/[font].svelte": {
-    "file": "pages/try/_font_.svelte-ad88268d.js",
+    "file": "pages/try/_font_.svelte-e09c4ec3.js",
     "src": "src/routes/try/[font].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -79,7 +79,7 @@
       "_index-04fcb002.js",
       "_meta-5b3a009f.js",
       "_HeaderSearch.svelte_svelte_type_style_lang-afbcb924.js",
-      "_Tags-3b86fdbb.js"
+      "_Download-37e5f6ac.js"
     ],
     "css": [
       "assets/pages/try/_font_.svelte-06016222.css"
@@ -118,8 +118,8 @@
       "_index-04fcb002.js"
     ]
   },
-  "_Tags-3b86fdbb.js": {
-    "file": "chunks/Tags-3b86fdbb.js",
+  "_Download-37e5f6ac.js": {
+    "file": "chunks/Download-37e5f6ac.js",
     "imports": [
       "_index-04fcb002.js",
       "_HeaderSearch.svelte_svelte_type_style_lang-afbcb924.js"
