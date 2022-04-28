@@ -36,10 +36,6 @@ import { Split } from 'carbon-icons-svelte';
         publicFonts = $store;
     }
 
-    const customtextToggle = e => {
-        // showCustomText = e.target.checked;
-    }
-
     const customtextHandler = e => {
         customText = e.detail;
     }
@@ -78,13 +74,23 @@ import { Split } from 'carbon-icons-svelte';
                                         <span data-glyph={character} arial-label={character}></span>
                                     {/each}
                                 {:else}
-                                    {#each letters as character}
-                                        <span data-glyph={character} arial-label={character}></span>
-                                    {/each}
+                                    {#if font.features.uppercase}
+                                        {#each letters as character}
+                                            <span data-glyph={character} arial-label={character}></span>
+                                        {/each}
+                                    {:else if font.features.lowercase}
+                                        {#each letters as character}
+                                            <span data-glyph={character.toLowerCase()} arial-label={character.toLowerCase()}></span>
+                                        {/each}
+                                    {/if}
+
                                     <br />
-                                    {#each numbers as character}
-                                        <span data-glyph={character} arial-label={character}></span>
-                                    {/each}
+
+                                    {#if font.features.digits}
+                                        {#each numbers as character}
+                                            <span data-glyph={character} arial-label={character}></span>
+                                        {/each}
+                                    {/if}
                                 {/if}
                             </div>
                         </Link>
