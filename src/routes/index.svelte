@@ -5,11 +5,9 @@
     // Components
     import { Button, Checkbox, Column, Link, Loading, Row,  Search, TextInput } from "carbon-components-svelte";
     import Tags from '../components/Tags.svelte';
-import { Split } from 'carbon-icons-svelte';
 
     let searchValue: string = '';
     let showCustomText: boolean = false;
-    // $: checked = false;
     $: customText = '';
     let isLoading = true;
     let publicFonts: Record<string, any>[] = [];
@@ -78,15 +76,17 @@ import { Split } from 'carbon-icons-svelte';
                                         {#each letters as character}
                                             <span data-glyph={character} arial-label={character}></span>
                                         {/each}
-                                    {:else if font.features.lowercase}
+                                    {/if}
+                                    
+                                    <!-- {#if font.features.lowercase}
+                                        <br />
                                         {#each letters as character}
                                             <span data-glyph={character.toLowerCase()} arial-label={character.toLowerCase()}></span>
                                         {/each}
-                                    {/if}
-
-                                    <br />
-
+                                    {/if} -->
+                                    
                                     {#if font.features.digits}
+                                        <br />
                                         {#each numbers as character}
                                             <span data-glyph={character} arial-label={character}></span>
                                         {/each}
