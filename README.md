@@ -20,7 +20,7 @@ I'm currently not interested in contributions of new fonts. However, if you come
 **Todo**
 
 - add more fonts
-- better filter options on websites
+- better filter options on website
 - option to handle missing characters in details view
 
 ## License
