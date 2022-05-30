@@ -26,7 +26,7 @@
 
     const changeHandler = () => {
         if (searchValue?.length) {
-            publicFonts = $store.filter(item => item.name.toLowerCase().includes(searchValue.toLowerCase()) || item.category.toLowerCase().includes(searchValue.toLowerCase()));
+            publicFonts = $store.filter(item => item.name.toLowerCase().includes(searchValue.toLowerCase()) || item.category.toLowerCase().includes(searchValue.toLowerCase()) || item.year.startsWith(searchValue));
         } else {
             clearHandler();
         }

@@ -10,7 +10,7 @@
     <Tag type="gray">{font.category}</Tag>
 
     {#if (font.year.length)}
-        <Tag type="gray">{font.year.slice(0, 3)}0s</Tag>
+        <Tag type="gray">{font.year}</Tag>
     {/if}
 
     {#if (font.features.missing.length)}
