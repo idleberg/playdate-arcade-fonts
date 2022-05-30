@@ -324,6 +324,22 @@
             }
         },
         {
+            "name": "Galaxy Fight - Universal Warriors",
+            "category": "Sans Light",
+            "year": "1995",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": false,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Gee Bee",
             "category": "Sans Regular",
             "year": "1978",
