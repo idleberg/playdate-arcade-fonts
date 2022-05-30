@@ -59,6 +59,21 @@
             }
         },
         {
+            "name": "Asterix",
+            "category": "Calligraphy & Lettering",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Big Run",
             "category": "Stencil",
             "size": "8x8",
