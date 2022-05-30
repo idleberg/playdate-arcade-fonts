@@ -324,6 +324,23 @@
             }
         },
         {
+            "name": "Gals Panic II Special Edition",
+            "displayName": "Gals Panic II: Special Edition",
+            "category": "Sans Light",
+            "year": "1994",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": false,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Galaxy Fight - Universal Warriors",
             "category": "Sans Light",
             "year": "1995",
