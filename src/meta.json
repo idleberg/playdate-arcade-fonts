@@ -404,6 +404,28 @@
             }
         },
         {
+            "name": "Gradius IV",
+            "displayName": "Gradius IV: Fukkatsu",
+            "category": "Sans Light",
+            "year": "1998",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
+                "specials": [
+                    "!",
+                    "#",
+                    "*",
+                    "+"
+                ],
+                "missing": []
+            }
+        },
+        {
             "name": "Highway Chase",
             "category": "Sans Regular",
             "year": "1980",
