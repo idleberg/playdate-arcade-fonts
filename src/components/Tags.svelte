@@ -5,7 +5,7 @@
 </script>
 
 <div>
-    <h2>{font.name}</h2>
+    <h2>{font.displayName || font.name}</h2>
     
     <Tag type="gray">{font.category}</Tag>
 
