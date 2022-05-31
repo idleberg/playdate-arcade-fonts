@@ -292,6 +292,22 @@
             }
         },
         {
+            "name": "Flak Attack",
+            "category": "Decorative",
+            "year": "1987",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Gaiapolis",
             "category": "Sans Regular",
             "year": "1993",
