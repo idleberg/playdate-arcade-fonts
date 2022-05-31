@@ -1059,6 +1059,22 @@
             }
         },
         {
+            "name": "Thunder Fox",
+            "category": "Stencil",
+            "year": "1990",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Time Pilot '89",
             "category": "Slanted",
             "year": "1984",
