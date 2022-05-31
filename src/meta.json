@@ -867,6 +867,22 @@
             }
         },
         {
+            "name": "R-Type",
+            "category": "Sans Light",
+            "year": "1987",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Shinobi",
             "category": "Calligraphy & Lettering",
             "year": "1987",
