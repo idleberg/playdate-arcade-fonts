@@ -277,6 +277,22 @@
             }
         },
         {
+            "name": "Dingo",
+            "category": "Sans Bold",
+            "year": "1983",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Dynamite Duke",
             "category": "Sans Regular",
             "year": "1989",
