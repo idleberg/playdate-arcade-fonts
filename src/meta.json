@@ -899,6 +899,24 @@
             }
         },
         {
+            "name": "Rally Bike Dash Yarou",
+            "category": "Decorative",
+            "year": "1988",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": [
+                    "k"
+                ]
+            }
+        },
+        {
             "name": "Shinobi",
             "category": "Calligraphy & Lettering",
             "year": "1987",
