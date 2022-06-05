@@ -659,6 +659,22 @@
             }
         },
         {
+            "name": "Loco-Motion",
+            "category": "Sans Bold",
+            "year": "1982",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "MVP",
             "category": "Sans Regular",
             "year": "1989",
