@@ -148,6 +148,23 @@
             }
         },
         {
+            "name": "Bubble Memories",
+            "displayName": "Bubble Memories: The Story of Bubble Bobble III",
+            "category": "Decorative",
+            "year": "1995",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Charlie Ninja",
             "category": "Horizontal Stress",
             "year": "1995",
