@@ -94,6 +94,22 @@
             }
         },
         {
+            "name": "Black Heart",
+            "category": "Decorative",
+            "year": "1991",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Blades of Steel",
             "category": "Decorative",
             "year": "1987",
