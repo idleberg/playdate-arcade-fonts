@@ -591,6 +591,22 @@
             }
         },
         {
+            "name": "Konami GT",
+            "category": "Slanted",
+            "year": "1985",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "variants": true,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Krull",
             "category": "Slanted",
             "year": "1983",
