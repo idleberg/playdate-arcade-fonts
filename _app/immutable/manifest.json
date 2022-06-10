@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-f17034c5.js",
+    "file": "start-677e2a3a.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -16,13 +16,13 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-e9279319.js",
+    "file": "pages/__layout.svelte-d3b4a1a5.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-9d5cb18d.js",
-      "_meta-fb5aa78a.js",
+      "_meta-e5c4d9c5.js",
       "_store-fb0b6846.js",
       "_HeaderSearch.svelte_svelte_type_style_lang-cc98f7df.js",
       "_Link-ad4fbedf.js",
@@ -42,7 +42,7 @@
     ]
   },
   "src/routes/faq/index.svelte": {
-    "file": "pages/faq/index.svelte-669f265c.js",
+    "file": "pages/faq/index.svelte-a6a0430c.js",
     "src": "src/routes/faq/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -54,7 +54,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-b0ab8b92.js",
+    "file": "pages/index.svelte-2dab0afc.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -63,7 +63,7 @@
       "_store-fb0b6846.js",
       "_Link-ad4fbedf.js",
       "_HeaderSearch.svelte_svelte_type_style_lang-cc98f7df.js",
-      "_Download-0cdc49af.js",
+      "_Tags-a1398d11.js",
       "_index-7a932709.js"
     ],
     "css": [
@@ -71,15 +71,15 @@
     ]
   },
   "src/routes/try/[font].svelte": {
-    "file": "pages/try/_font_.svelte-c34d7b88.js",
+    "file": "pages/try/_font_.svelte-d37afe32.js",
     "src": "src/routes/try/[font].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-9d5cb18d.js",
-      "_meta-fb5aa78a.js",
+      "_meta-e5c4d9c5.js",
       "_HeaderSearch.svelte_svelte_type_style_lang-cc98f7df.js",
-      "_Download-0cdc49af.js"
+      "_Tags-a1398d11.js"
     ],
     "css": [
       "assets/pages/try/_font_.svelte-06016222.css"
@@ -94,8 +94,8 @@
       "_index-9d5cb18d.js"
     ]
   },
-  "_meta-fb5aa78a.js": {
-    "file": "chunks/meta-fb5aa78a.js"
+  "_meta-e5c4d9c5.js": {
+    "file": "chunks/meta-e5c4d9c5.js"
   },
   "_store-fb0b6846.js": {
     "file": "chunks/store-fb0b6846.js",
@@ -118,8 +118,8 @@
       "_index-9d5cb18d.js"
     ]
   },
-  "_Download-0cdc49af.js": {
-    "file": "chunks/Download-0cdc49af.js",
+  "_Tags-a1398d11.js": {
+    "file": "chunks/Tags-a1398d11.js",
     "imports": [
       "_index-9d5cb18d.js",
       "_HeaderSearch.svelte_svelte_type_style_lang-cc98f7df.js"
