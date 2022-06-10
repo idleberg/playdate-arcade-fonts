@@ -95,31 +95,13 @@
 
         <Row>
             <Column padding>
-                {#if (font.features.variants)}
-                    <Button
-                        href={`${import.meta.env.VITE_HOMEPAGE}/fonts/${font.category}/${font.name} (fixed width).fnt`}
-                        download={`${font.name} (fixed width).fnt`}
-                        icon={Download}
-                    >Fixed width</Button>
-                    <Button
-                        href={`${import.meta.env.VITE_HOMEPAGE}/fonts/${font.category}/${font.name} (auto-sized).fnt`}
-                        download={`${font.name} (auto-sized).fnt`}
-                        kind="tertiary"
-                        icon={Download}
-                    >Auto-sized</Button>
-                {:else}
-                    <Button
-                        href={`${import.meta.env.VITE_HOMEPAGE}/fonts/${font.category}/${font.name}.fnt`}
-                        download={`${font.name} (fixed width).fnt`}
-                        icon={Download}
-                    >Fixed width</Button>
-                    <Button
-                        icon={Download}
-                        disabled
-                    >Auto-sized</Button>
-                {/if}
                 <Button
-                    href={`https://github.com/idleberg/playdate-arcade-fonts/tree/main/static/fonts/${encodeURIComponent(font.category)}/${font.name} (fixed width).fnt`}
+                    href={`${import.meta.env.VITE_HOMEPAGE}/fonts/${font.category}/${font.name}.fnt`}
+                    download={`${font.name}.fnt`}
+                    icon={Download}
+                >Download</Button>
+                <Button
+                    href={`https://github.com/idleberg/playdate-arcade-fonts/tree/main/static/fonts/${encodeURIComponent(font.category)}/${font.name}.fnt`}
                     kind="tertiary"
                     icon={Code}
                 >Source</Button>

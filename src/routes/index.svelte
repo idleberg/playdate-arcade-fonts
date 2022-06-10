@@ -6,7 +6,7 @@
     import { Button, Checkbox, Column, Link, Loading, Row, Search, TextInput } from "carbon-components-svelte";
     import Code from "carbon-icons-svelte/lib/Code.svelte";
     import Tags from '../components/Tags.svelte';
-    import Download from "carbon-icons-svelte/lib/Download.svelte";
+    import View from "carbon-icons-svelte/lib/View.svelte";
 
     let searchValue: string = '';
     let showCustomText: boolean = false;
@@ -104,10 +104,10 @@
                         <Button
                             href={`${import.meta.env.VITE_HOMEPAGE}/try/${encodeURIComponent(font.name)}`}
                             size="small"
-                            icon={Download}
+                            icon={View}
                         >Try</Button>
                         <Button
-                            href={`https://github.com/idleberg/playdate-arcade-fonts/tree/main/static/fonts/${encodeURIComponent(font.category)}/${font.name} (fixed width).fnt`}
+                            href={`https://github.com/idleberg/playdate-arcade-fonts/tree/main/static/fonts/${encodeURIComponent(font.category)}/${font.name}.fnt`}
                             size="small"
                             kind="tertiary"
                             icon={Code}

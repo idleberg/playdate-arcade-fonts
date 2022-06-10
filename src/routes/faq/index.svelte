@@ -76,30 +76,6 @@
 
         <AccordionItem open={isDev}>
             <svelte:fragment slot="title">
-              <strong>What's a fixed size font?</strong>
-            </svelte:fragment>
-
-            <p>
-                All of the fonts included were sampled from classic video games, that made use of a 8x8 grid. Even when a glyph (or ”character”) occupies less space,
-                it lives on a 8x8 grid. For example, both wide (e.g. uppercase <em>W</em>) and narrow glyphs (e.g. uppercase <em>I</em>) will have the same dimensions.
-            </p>
-        </AccordionItem>
-
-        <AccordionItem open={isDev}>
-            <svelte:fragment slot="title">
-              <strong>What's an auto-sized font?</strong>
-            </svelte:fragment>
-
-            <p>
-                The opposite of a fixed width font (see above). Panic's font editor
-                <OutboundLink inline href="https://play.date/caps/">Caps</OutboundLink>
-                has an auto-size feature which basically draws a glyph on the horizontal space it actually occupies. So, an uppercase <em>I</em> is usually narrower
-                than an uppercase <em>W</em>. While these fonts haven't been design with that in mind, some of them might work better for you in their auto-sized variant.
-            </p>
-        </AccordionItem>
-
-        <AccordionItem open={isDev}>
-            <svelte:fragment slot="title">
               <strong>What's an unused font?</strong>
             </svelte:fragment>
 
