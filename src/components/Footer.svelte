@@ -12,7 +12,7 @@
                 <Link inline href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">License</Link>
             </li>
             <li>
-                <Link inline href={'https://github.com/idleberg/playdate-arcade-fonts-viewer'}>Get App</Link>
+                <Link inline href={'https://github.com/idleberg/playdate-arcade-fonts-viewer'}>Playdate App</Link>
             </li>
             <li>
                 <Link inline href={`${import.meta.env.VITE_HOMEPAGE}/faq`}>FAQ</Link>
