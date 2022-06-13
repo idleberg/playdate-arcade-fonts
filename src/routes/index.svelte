@@ -105,12 +105,14 @@
                             href={`${import.meta.env.VITE_HOMEPAGE}/try/${encodeURIComponent(font.name)}`}
                             size="small"
                             icon={View}
+                            title={`Preview the ${encodeURIComponent(font.name)} font`}
                         >Try</Button>
                         <Button
                             href={`https://github.com/idleberg/playdate-arcade-fonts/tree/main/static/fonts/${encodeURIComponent(font.category)}/${font.name}.fnt`}
                             size="small"
                             kind="tertiary"
                             icon={Code}
+                            title={`View source of the ${encodeURIComponent(font.name)} font`}
                         >Source</Button>
                     </Column>
                 </Row>
