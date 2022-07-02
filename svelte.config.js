@@ -16,7 +16,6 @@ const config = {
 		prerender: {
 			default: true,
 		},
-		trailingSlash: 'always',
 		paths: {
 			base: dev ? '' : '/playdate-arcade-fonts'
 		}
