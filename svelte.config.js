@@ -13,11 +13,11 @@ const config = {
 		adapter: adapter({
 			fallback: '404.html'
 		}),
-		prerender: {
-			default: true,
-		},
 		paths: {
 			base: dev ? '' : '/playdate-arcade-fonts'
+		},
+		prerender: {
+			default: true
 		}
 	}
 };
