@@ -22,6 +22,21 @@
             }
         },
         {
+            "name": "A.D. 2083",
+            "category": "Micr",
+            "year": "1983",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Action Hollywood",
             "category": "Horizontal Stress",
             "year": "1995",
