@@ -322,6 +322,21 @@
         },
         {
             "name": "Dingo",
+            "category": "Slanted",
+            "year": "1991",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
+            "name": "Drift Out",
             "category": "Sans Bold",
             "year": "1983",
             "size": "8x8",
