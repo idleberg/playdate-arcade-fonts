@@ -1103,6 +1103,21 @@
             }
         },
         {
+            "name": "Steel Gunner 2",
+            "category": "Micr",
+            "year": "1991",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Strategy X",
             "category": "Micr",
             "year": "1981",
