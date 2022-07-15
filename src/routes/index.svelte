@@ -67,7 +67,7 @@
                     <Column lg={16}>
                         <Tags {font} />
 
-                        <Link href={`${import.meta.env.VITE_HOMEPAGE}/try/${encodeURIComponent(font.name)}`} aria-title={`Preview the ${font.name} bitmap font`}>
+                        <Link href={`${import.meta.env.VITE_HOMEPAGE}/try/${encodeURIComponent(font.name)}`} aria-label={`Preview the ${font.name} bitmap font`}>
                             <div class="preview zoom-4x" style={`--backgroundImage: url("${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeURIComponent(font.name)}.png")`}>
                                 {#if showCustomText && customText?.length}
                                     {#each customText.split('') as character}
