@@ -801,6 +801,21 @@
             }
         },
         {
+            "name": "Mutant Night",
+            "category": "Micr",
+            "year": "1987",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Namco Classics Collection",
             "category": "Sans Regular",
             "year": "1995",
