@@ -5,7 +5,7 @@
     // Components
     import { Button, Checkbox, Column, Link, Loading, Row, Search, TextInput } from "carbon-components-svelte";
     import Code from "carbon-icons-svelte/lib/Code.svelte";
-    import Tags from '../components/Tags.svelte';
+    import Tags from '$components/Tags.svelte';
     import View from "carbon-icons-svelte/lib/View.svelte";
 
     let searchValue: string = '';

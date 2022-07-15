@@ -1,7 +1,7 @@
 <script lang="ts">
     import { onMount } from "svelte";
     import { page as pageStore } from '$app/stores';
-    import page from '../../meta.json';
+    import page from '$meta';
     
     // Components
     import { Button, Column, Loading, Row, TextInput } from "carbon-components-svelte";

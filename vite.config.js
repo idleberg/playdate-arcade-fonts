@@ -6,7 +6,8 @@ const config = {
 	plugins: [sveltekit()],
 	resolve: {
 		alias: {
-			$components: resolve('./src/components')
+			$components: resolve('./src/components'),
+			$meta: resolve('./src/meta.json'),
 		}
 	}
 };
