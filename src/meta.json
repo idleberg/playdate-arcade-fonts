@@ -119,6 +119,21 @@
             }
         },
         {
+            "name": "Battle Garegga - Type 2",
+            "category": "Micro",
+            "year": "1996",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Big Run",
             "category": "Stencil",
             "year": "1989",
