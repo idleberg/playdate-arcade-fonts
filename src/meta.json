@@ -830,6 +830,21 @@
             }
         },
         {
+            "name": "Mariner",
+            "category": "Calligraphy & Lettering",
+            "year": "1981",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Moonwalker",
             "displayName": "Michael Jackson's Moonwalker",
             "category": "Sans Regular",
