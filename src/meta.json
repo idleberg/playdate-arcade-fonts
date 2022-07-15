@@ -1043,6 +1043,21 @@
             }
         },
         {
+            "name": "Space Position",
+            "category": "Micr",
+            "year": "1986",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Spy Hunter",
             "category": "Serif",
             "year": "1983",
