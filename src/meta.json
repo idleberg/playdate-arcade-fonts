@@ -366,6 +366,21 @@
             }
         },
         {
+            "name": "Fixeight",
+            "category": "Micr",
+            "year": "1992",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Flak Attack",
             "category": "Decorative",
             "year": "1987",
