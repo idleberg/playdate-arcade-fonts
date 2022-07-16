@@ -276,6 +276,21 @@
             }
         },
         {
+            "name": "Columns",
+            "category": "Calligraphy & Lettering",
+            "year": "1990",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Cops 'n Robbers",
             "category": "Sans Light",
             "year": "1976",
