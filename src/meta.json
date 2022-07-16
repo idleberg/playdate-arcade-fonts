@@ -1268,6 +1268,21 @@
             }
         },
         {
+            "name": "The Ninja Kids",
+            "category": "Calligraphy & Lettering",
+            "year": "1990",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": true,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "The Simpsons",
             "category": "Calligraphy & Lettering",
             "year": "1991",
