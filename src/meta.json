@@ -231,6 +231,21 @@
             }
         },
         {
+            "name": "Cameltry",
+            "category": "Calligraphy & Lettering",
+            "year": "1989",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Charlie Ninja",
             "category": "Horizontal Stress",
             "year": "1995",
