@@ -22,6 +22,21 @@
             }
         },
         {
+            "name": "Ace Attacker",
+            "category": "Stencil",
+            "year": "1988",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "A.D. 2083",
             "category": "Micr",
             "year": "1983",
