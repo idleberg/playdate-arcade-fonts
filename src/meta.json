@@ -231,6 +231,22 @@
             }
         },
         {
+            "name": "Bubble Symphony [unused]",
+            "displayName": "Bubble Symphony",
+            "category": "Horizontal Stress",
+            "year": "1994",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Cameltry",
             "category": "Calligraphy & Lettering",
             "year": "1989",
