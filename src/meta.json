@@ -322,6 +322,21 @@
             }
         },
         {
+            "name": "Dance Dance Revolution 3rd Mix",
+            "category": "Horizontal Stress",
+            "year": "1999",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": true,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Dark Seal",
             "category": "Slanted",
             "year": "1990",
