@@ -76,7 +76,7 @@
                     style={`max-height:400px`}
                     placeholder="Enter your text..."
                     labelText="Input"
-                    on:input={handleChange}
+                    on:input={e => handleChange(e, font.size)}
                     value={defaultText}
                 />
             </Column>
