@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "immutable/start-8dec7748.js",
+    "file": "immutable/start-df175a46.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -54,7 +54,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "immutable/pages/index.svelte-99fab27c.js",
+    "file": "immutable/pages/index.svelte-139563ca.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -71,7 +71,7 @@
     ]
   },
   "src/routes/try/[font].svelte": {
-    "file": "immutable/pages/try/_font_.svelte-720d6ca9.js",
+    "file": "immutable/pages/try/_font_.svelte-847d8588.js",
     "src": "src/routes/try/[font].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -132,13 +132,13 @@
     "file": "immutable/assets/index-b8969f3d.css",
     "src": "src/routes/index.css"
   },
-  "src/routes/try/[font].css": {
-    "file": "immutable/assets/[font]-1fbef54d.css",
-    "src": "src/routes/try/[font].css"
-  },
   "HeaderSearch.css": {
     "file": "immutable/assets/HeaderSearch-da4e9565.css",
     "src": "HeaderSearch.css"
+  },
+  "src/routes/try/[font].css": {
+    "file": "immutable/assets/[font]-1fbef54d.css",
+    "src": "src/routes/try/[font].css"
   },
   "src/routes/__layout.css": {
     "file": "immutable/assets/__layout-3c315c7d.css",
