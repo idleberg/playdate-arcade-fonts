@@ -16,20 +16,20 @@
 
     onMount(() => {
         handleChange({
-            detail: defaultText
-        })
+            detail: defaultText,
+        }, font.size)
     })
     
     const font = page.content.find(font => font.name === $pageStore.params.font);
     const validCharacters = ' !"#$&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~';
 
-    function handleChange(e) {
+    function handleChange(e, size: string) {
         const characters = e.detail.split('');
         const html: string[] = [];
 
         characters.forEach((character: string) => {
             if ([...validCharacters].includes(character)) {
-                html.push(`<span data-glyph="${character}" arial-label=${character}></span>`);
+                html.push(`<span data-glyph="${character}" data-size="${size}" arial-label=${character}></span>`);
             }
         });
 

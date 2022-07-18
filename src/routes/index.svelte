@@ -71,26 +71,26 @@
                             <div class="preview zoom-4x" style={`--backgroundImage: url("${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeURIComponent(font.name)}.png")`}>
                                 {#if showCustomText && customText?.length}
                                     {#each customText.split('') as character}
-                                        <span data-glyph={character} arial-label={character}></span>
+                                        <span data-glyph={character} data-size={font.size} arial-label={character}></span>
                                     {/each}
                                 {:else}
                                     {#if font.features.uppercase}
                                         {#each letters as character}
-                                            <span data-glyph={character} arial-label={character}></span>
+                                            <span data-glyph={character} data-size={font.size} arial-label={character}></span>
                                         {/each}
                                     {/if}
                                     
                                     <!-- {#if font.features.lowercase}
                                         <br />
                                         {#each letters as character}
-                                            <span data-glyph={character.toLowerCase()} arial-label={character.toLowerCase()}></span>
+                                            <span data-glyph={character.toLowerCase()} data-size={font.size} arial-label={character.toLowerCase()}></span>
                                         {/each}
                                     {/if} -->
                                     
                                     {#if font.features.digits}
                                         <br />
                                         {#each numbers as character}
-                                            <span data-glyph={character} arial-label={character}></span>
+                                            <span data-glyph={character} data-size={font.size} arial-label={character}></span>
                                         {/each}
                                     {/if}
                                 {/if}

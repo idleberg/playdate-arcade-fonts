@@ -25,7 +25,6 @@
 
 <style lang="scss" global>
     :root {
-        --size: 8px;
         --multiplier: 1;
     }
 
@@ -35,6 +34,16 @@
 
     :global(.zoom-4x) {
         --multiplier: 4;
+    }
+
+    [data-size="8x8"] {
+        --width: 8px;
+        --height: 8px;
+    }
+
+    [data-size="8x16"] {
+        --width: 8px;
+        --height: 16px;
     }
 
     [data-glyph] {
@@ -67,394 +76,63 @@
         background-size: calc(var(--multiplier) * 148px);
         content-visibility: hidden;
         display: inline-block;
-        height: calc(var(--size) * var(--multiplier));
+        height: calc(var(--height) * var(--multiplier));
         image-rendering: pixelated;
-        width: calc(var(--size) * var(--multiplier));
-    }
-
-    /* Row 1 */
-    [data-glyph=" "] {
-        background-position: var(--col-1) var(--row-1);
-    }
-
-    [data-glyph="!"] {
-        background-position: var(--col-2) var(--row-1);
-    }
-
-    [data-glyph="\""] {
-        background-position: var(--col-3) var(--row-1);
-    }
-
-    [data-glyph="#"] {
-        background-position: var(--col-4) var(--row-1);
-    }
-
-    [data-glyph="$"] {
-        background-position: var(--col-5) var(--row-1);
-    }
-
-    [data-glyph="%"] {
-        background-position: var(--col-6) var(--row-1);
-    }
-
-    [data-glyph="&"] {
-        background-position: var(--col-7) var(--row-1);
-    }
-
-    [data-glyph="'"] {
-        background-position: var(--col-8) var(--row-1);
-    }
-
-    [data-glyph="("] {
-        background-position: var(--col-9) var(--row-1);
-    }
-
-    [data-glyph=")"] {
-        background-position: var(--col-10) var(--row-1);
-    }
-
-    [data-glyph="*"] {
-        background-position: var(--col-11) var(--row-1);
-    }
-
-    [data-glyph="+"] {
-        background-position:var(--col-12) var(--row-1);
-    }
-
-    [data-glyph=","] {
-        background-position: var(--col-13) var(--row-1);
-    }
-
-    [data-glyph="-"] {
-        background-position: var(--col-14) var(--row-1);
-    }
-
-    [data-glyph="."] {
-        background-position: var(--col-15) var(--row-1);
-    }
-
-    [data-glyph="/"] {
-        background-position: var(--col-16) var(--row-1);
-    }
-
-    /* Row 2 */
-    [data-glyph="0"] {
-        background-position: var(--col-1) var(--row-2);
-    }
-
-    [data-glyph="1"] {
-        background-position: var(--col-2) var(--row-2);
-    }
-
-    [data-glyph="2"] {
-        background-position: var(--col-3) var(--row-2);
-    }
-
-    [data-glyph="3"] {
-        background-position: var(--col-4) var(--row-2);
-    }
-
-    [data-glyph="4"] {
-        background-position: var(--col-5) var(--row-2);
-    }
-
-    [data-glyph="5"] {
-        background-position: var(--col-6) var(--row-2);
-    }
-
-    [data-glyph="6"] {
-        background-position: var(--col-7) var(--row-2);
-    }
-
-    [data-glyph="7"] {
-        background-position: var(--col-8) var(--row-2);
-    }
-
-    [data-glyph="8"] {
-        background-position: var(--col-9) var(--row-2);
-    }
-
-    [data-glyph="9"] {
-        background-position: var(--col-10) var(--row-2);
-    }
-
-    [data-glyph=":"] {
-        background-position: var(--col-11) var(--row-2);
-    }
-
-    [data-glyph=";"] {
-        background-position: var(--col-12) var(--row-2);
-    }
-
-    [data-glyph="<"] {
-        background-position: var(--col-13) var(--row-2);
-    }
-
-    [data-glyph="="] {
-        background-position: var(--col-14) var(--row-2);
-    }
-
-    [data-glyph=">"] {
-        background-position: var(--col-15) var(--row-2);
-    }
-
-    [data-glyph="?"] {
-        background-position: var(--col-16) var(--row-2);
-    }
-
-    /* Row 3 */
-    [data-glyph="@"] {
-        background-position: var(--col-1) var(--row-3);
-    }
-
-    [data-glyph="A"] {
-        background-position: var(--col-2) var(--row-3);
-    }
-
-    [data-glyph="B"] {
-        background-position: var(--col-3) var(--row-3);
-    }
-
-    [data-glyph="C"] {
-        background-position: var(--col-4) var(--row-3);
-    }
-
-    [data-glyph="D"] {
-        background-position: var(--col-5) var(--row-3);
-    }
-
-    [data-glyph="E"] {
-        background-position: var(--col-6) var(--row-3);
-    }
-
-    [data-glyph="F"] {
-        background-position: var(--col-7) var(--row-3);
-    }
-
-    [data-glyph="G"] {
-        background-position: var(--col-8) var(--row-3);
-    }
-
-    [data-glyph="H"] {
-        background-position: var(--col-9) var(--row-3);
-    }
-
-    [data-glyph="I"] {
-        background-position: var(--col-10) var(--row-3);
-    }
-
-    [data-glyph="J"] {
-        background-position: var(--col-11) var(--row-3);
-    }
-
-    [data-glyph="K"] {
-        background-position: var(--col-12) var(--row-3);
-    }
-
-    [data-glyph="L"] {
-        background-position: var(--col-13) var(--row-3);
-    }
-
-    [data-glyph="M"] {
-        background-position: var(--col-14) var(--row-3);
-    }
-
-    [data-glyph="N"] {
-        background-position: var(--col-15) var(--row-3);
-    }
-
-    [data-glyph="O"] {
-        background-position: var(--col-16) var(--row-3);
-    }
-
-    /* Row 4 */
-    [data-glyph="P"] {
-        background-position: var(--col-1) var(--row-4);
-    }
-
-    [data-glyph="Q"] {
-        background-position: var(--col-2) var(--row-4);
-    }
-
-    [data-glyph="R"] {
-        background-position: var(--col-3) var(--row-4);
-    }
-
-    [data-glyph="S"] {
-        background-position: var(--col-4) var(--row-4);
-    }
-
-    [data-glyph="T"] {
-        background-position: var(--col-5) var(--row-4);
-    }
-
-    [data-glyph="U"] {
-        background-position: var(--col-6) var(--row-4);
-    }
-
-    [data-glyph="V"] {
-        background-position: var(--col-7) var(--row-4);
-    }
-
-    [data-glyph="W"] {
-        background-position: var(--col-8) var(--row-4);
-    }
-
-    [data-glyph="X"] {
-        background-position: var(--col-9) var(--row-4);
-    }
-
-    [data-glyph="Y"] {
-        background-position: var(--col-10) var(--row-4);
-    }
-
-    [data-glyph="Z"] {
-        background-position: var(--col-11) var(--row-4);
-    }
-
-    [data-glyph="["] {
-        background-position: var(--col-12) var(--row-4);
-    }
-
-    [data-glyph="\\"] {
-        background-position: var(--col-13) var(--row-4);
-    }
-
-    [data-glyph="]"] {
-        background-position: var(--col-14) var(--row-4);
-    }
-
-    [data-glyph="^"] {
-        background-position: var(--col-15) var(--row-4);
-    }
-
-    [data-glyph="_"] {
-        background-position: var(--col-16) var(--row-4);
-    }
-
-    /* Row 5 */
-    [data-glyph="`"] {
-        background-position: var(--col-1) var(--row-5);
-    }
-
-    [data-glyph="a"] {
-        background-position: var(--col-2) var(--row-5);
-    }
-
-    [data-glyph="b"] {
-        background-position: var(--col-3) var(--row-5);
-    }
-
-    [data-glyph="c"] {
-        background-position: var(--col-4) var(--row-5);
-    }
-
-    [data-glyph="d"] {
-        background-position: var(--col-5) var(--row-5);
-    }
-
-    [data-glyph="e"] {
-        background-position: var(--col-6) var(--row-5);
-    }
-
-    [data-glyph="f"] {
-        background-position: var(--col-7) var(--row-5);
-    }
-
-    [data-glyph="g"] {
-        background-position: var(--col-8) var(--row-5);
-    }
-
-    [data-glyph="h"] {
-        background-position: var(--col-9) var(--row-5);
-    }
-
-    [data-glyph="i"] {
-        background-position: var(--col-10) var(--row-5);
-    }
-
-    [data-glyph="j"] {
-        background-position: var(--col-11) var(--row-5);
-    }
-
-    [data-glyph="k"] {
-        background-position: var(--col-12) var(--row-5);
-    }
-
-    [data-glyph="l"] {
-        background-position: var(--col-13) var(--row-5);
-    }
-
-    [data-glyph="m"] {
-        background-position: var(--col-14) var(--row-5);
-    }
-
-    [data-glyph="n"] {
-        background-position: var(--col-15) var(--row-5);
-    }
-
-    [data-glyph="o"] {
-        background-position: var(--col-16) var(--row-5);
-    }
-
-    /* Row 6 */
-    [data-glyph="p"] {
-        background-position: var(--col-1) var(--row-6);
-    }
-
-    [data-glyph="q"] {
-        background-position: var(--col-2) var(--row-6);
-    }
-
-    [data-glyph="r"] {
-        background-position: var(--col-3) var(--row-6);
-    }
-
-    [data-glyph="s"] {
-        background-position: var(--col-4) var(--row-6);
-    }
-
-    [data-glyph="t"] {
-        background-position: var(--col-5) var(--row-6);
-    }
-
-    [data-glyph="u"] {
-        background-position: var(--col-6) var(--row-6);
-    }
-
-    [data-glyph="v"] {
-        background-position: var(--col-7) var(--row-6);
-    }
-
-    [data-glyph="w"] {
-        background-position: var(--col-8) var(--row-6);
-    }
-
-    [data-glyph="x"] {
-        background-position: var(--col-9) var(--row-6);
-    }
-
-    [data-glyph="y"] {
-        background-position: var(--col-10) var(--row-6);
-    }
-
-    [data-glyph="z"] {
-        background-position: var(--col-11) var(--row-6);
-    }
-
-    [data-glyph="{"] {
-        background-position: var(--col-12) var(--row-6);
-    }
-
-    [data-glyph="|"] {
-        background-position: var(--col-13) var(--row-6);
-    }
-
-    [data-glyph="}"] {
-        background-position: var(--col-13) var(--row-6);
-    }
-
-    [data-glyph="~"] {
-        background-position: var(--col-14) var(--row-6);
+        width: calc(var(--width) * var(--multiplier));
+    }
+
+    $row-1: " ", "!", "\\\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/";
+    $row-2: "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ":", ";", "<", "=", ">", "?";
+    $row-3: "@", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O";
+    $row-4: "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "[", "\\\\", "]", "^", "_";
+    $row-5: "`", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o";
+    $row-6:"p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "{", "|", "}", "~";
+    
+    @each $current-glyph in $row-1 {
+        $i: index($row-1, $current-glyph);
+        
+        [data-glyph="#{$current-glyph}"] {
+            background-position: var(--col-#{$i}) var(--row-1);
+        }
+    }
+    
+    @each $current-glyph in $row-2 {
+        $i: index($row-2, $current-glyph);
+        
+        [data-glyph="#{$current-glyph}"] {
+            background-position: var(--col-#{$i}) var(--row-2);
+        }
+    }
+    
+    @each $current-glyph in $row-3 {
+        $i: index($row-3, $current-glyph);
+        
+        [data-glyph="#{$current-glyph}"] {
+            background-position: var(--col-#{$i}) var(--row-3);
+        }
+    }
+    
+    @each $current-glyph in $row-4 {
+        $i: index($row-4, $current-glyph);
+        
+        [data-glyph="#{$current-glyph}"] {
+            background-position: var(--col-#{$i}) var(--row-4);
+        }
+    }
+    
+    @each $current-glyph in $row-5 {
+        $i: index($row-5, $current-glyph);
+        
+        [data-glyph="#{$current-glyph}"] {
+            background-position: var(--col-#{$i}) var(--row-5);
+        }
+    }
+    
+    @each $current-glyph in $row-6 {
+        $i: index($row-6, $current-glyph);
+        
+        [data-glyph="#{$current-glyph}"] {
+            background-position: var(--col-#{$i}) var(--row-6);
+        }
     }
 </style>
