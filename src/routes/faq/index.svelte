@@ -86,7 +86,7 @@
 
         <AccordionItem open={isDev}>
             <svelte:fragment slot="title">
-              <strong>How are these fonts license?</strong>
+              <strong>How are these fonts licensed?</strong>
             </svelte:fragment>
 
             <p>
