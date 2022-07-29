@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "immutable/start-185fe669.js",
+    "file": "immutable/start-a2b96d88.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -42,7 +42,7 @@
     ]
   },
   "src/routes/faq/index.svelte": {
-    "file": "immutable/pages/faq/index.svelte-a31718d2.js",
+    "file": "immutable/pages/faq/index.svelte-09dd0773.js",
     "src": "src/routes/faq/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -128,10 +128,6 @@
       "_preload-helper-7901f257.js"
     ]
   },
-  "src/routes/index.css": {
-    "file": "immutable/assets/index-b8969f3d.css",
-    "src": "src/routes/index.css"
-  },
   "HeaderSearch.css": {
     "file": "immutable/assets/HeaderSearch-da4e9565.css",
     "src": "HeaderSearch.css"
@@ -139,6 +135,10 @@
   "src/routes/try/[font].css": {
     "file": "immutable/assets/[font]-1fbef54d.css",
     "src": "src/routes/try/[font].css"
+  },
+  "src/routes/index.css": {
+    "file": "immutable/assets/index-b8969f3d.css",
+    "src": "src/routes/index.css"
   },
   "src/routes/__layout.css": {
     "file": "immutable/assets/__layout-3c315c7d.css",
