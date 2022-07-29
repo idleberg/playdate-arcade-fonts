@@ -80,7 +80,10 @@
             </svelte:fragment>
 
             <p>
-                A font considered for a game that didn't make it into the final product.
+                A font considered for a game that didn't make it into the final product. Presumably, they ended
+                in the ROM and have later been discovered by the author of the
+                <OutboundLink inline href="https://readonlymemory.vg/shop/book/arcade-game-typography/">Arcade Game Typography</OutboundLink>
+                book.
             </p>
         </AccordionItem>
 
