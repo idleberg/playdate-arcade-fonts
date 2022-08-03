@@ -337,6 +337,21 @@
             }
         },
         {
+            "name": "Cyberball",
+            "category": "Sans Bold",
+            "year": "1988",
+            "size": "8x8",
+            "public": true,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "outline": false,
+                "specials": [],
+                "missing": []
+            }
+        },
+        {
             "name": "Dance Dance Revolution 3rd Mix",
             "category": "Horizontal Stress",
             "year": "1999",
