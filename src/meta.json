@@ -1012,6 +1012,23 @@
             }
         },
         {
+            "name": "Outrun",
+            "category": "Sans Regular",
+            "year": "1986",
+            "size": "8x16",
+            "public": false,
+            "features": {
+                "uppercase": true,
+                "digits": true,
+                "lowercase": false,
+                "outline": false,
+                "specials": [
+                    "."
+                ],
+                "missing": []
+            }
+        },
+        {
             "name": "Pac-Man",
             "category": "Sans Regular",
             "year": "1980",
