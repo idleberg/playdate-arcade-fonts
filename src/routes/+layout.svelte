@@ -92,7 +92,13 @@
         $i: index($row-1, $current-glyph);
         
         [data-glyph="#{$current-glyph}"] {
-            background-position: var(--col-#{$i}) var(--row-1);
+            &[data-size="8x8"] {
+                background-position: var(--col-#{$i}) var(--row-1);
+            }
+
+            &[data-size="8x16"] {
+                background-position: var(--col-#{$i}) calc(var(--row-2) * 2 + 2px);
+            }
         }
     }
     
@@ -100,7 +106,13 @@
         $i: index($row-2, $current-glyph);
         
         [data-glyph="#{$current-glyph}"] {
-            background-position: var(--col-#{$i}) var(--row-2);
+            &[data-size="8x8"] {
+                background-position: var(--col-#{$i}) var(--row-2);
+            }
+
+            &[data-size="8x16"] {
+                background-position: var(--col-#{$i}) calc(var(--row-2) * 2 + 2px);
+            }
         }
     }
     
@@ -108,7 +120,13 @@
         $i: index($row-3, $current-glyph);
         
         [data-glyph="#{$current-glyph}"] {
-            background-position: var(--col-#{$i}) var(--row-3);
+            &[data-size="8x8"] {
+                background-position: var(--col-#{$i}) var(--row-3);
+            }
+
+            &[data-size="8x16"] {
+                background-position: var(--col-#{$i}) calc(var(--row-3) * 2 + 2px);
+            }
         }
     }
     
@@ -116,7 +134,13 @@
         $i: index($row-4, $current-glyph);
         
         [data-glyph="#{$current-glyph}"] {
-            background-position: var(--col-#{$i}) var(--row-4);
+            &[data-size="8x8"] {
+                background-position: var(--col-#{$i}) var(--row-4);
+            }
+
+            &[data-size="8x16"] {
+                background-position: var(--col-#{$i}) calc(var(--row-4) * 2 + 2px);
+            }
         }
     }
     
@@ -124,7 +148,13 @@
         $i: index($row-5, $current-glyph);
         
         [data-glyph="#{$current-glyph}"] {
-            background-position: var(--col-#{$i}) var(--row-5);
+            &[data-size="8x8"] {
+                background-position: var(--col-#{$i}) var(--row-5);
+            }
+
+            &[data-size="8x16"] {
+                background-position: var(--col-#{$i}) calc(var(--row-5) * 2 + 2px);
+            }
         }
     }
     
@@ -132,7 +162,13 @@
         $i: index($row-6, $current-glyph);
         
         [data-glyph="#{$current-glyph}"] {
-            background-position: var(--col-#{$i}) var(--row-6);
+            &[data-size="8x8"] {
+                background-position: var(--col-#{$i}) var(--row-6);
+            }
+
+            &[data-size="8x16"] {
+                background-position: var(--col-#{$i}) calc(var(--row-6) * 2 + 2px);
+            }
         }
     }
 </style>

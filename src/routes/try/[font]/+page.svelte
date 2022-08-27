@@ -7,7 +7,7 @@
     import { Button, Column, Loading, Row, TextInput } from "carbon-components-svelte";
     import Code from "carbon-icons-svelte/lib/Code.svelte";
     import Download from "carbon-icons-svelte/lib/Download.svelte";
-    import Tags from '../../components/Tags.svelte';
+    import Tags from '../../../components/Tags.svelte';
 
     let previewArea: HTMLElement;
     let previewArea2x: HTMLElement;
