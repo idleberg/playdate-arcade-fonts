@@ -7,18 +7,21 @@
 		<link rel="icon" href="/playdate-arcade-fonts/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="content-security-policy" content="">
-	<link rel="modulepreload" href="/playdate-arcade-fonts/_app/immutable/start-a2b96d88.js">
-	<link rel="modulepreload" href="/playdate-arcade-fonts/_app/immutable/chunks/index-c434b4f0.js">
-	<link rel="modulepreload" href="/playdate-arcade-fonts/_app/immutable/chunks/preload-helper-7901f257.js">
+	<link rel="modulepreload" href="/playdate-arcade-fonts/_app/immutable/start-8255b779.js">
+	<link rel="modulepreload" href="/playdate-arcade-fonts/_app/immutable/chunks/index-1588bfdc.js">
+	<link rel="modulepreload" href="/playdate-arcade-fonts/_app/immutable/chunks/singletons-d2af05dc.js">
+	<link rel="modulepreload" href="/playdate-arcade-fonts/_app/immutable/chunks/preload-helper-aa6bc0ce.js">
 	</head>
 	<body>
 		<div>
 		<script type="module" data-sveltekit-hydrate="45h">
-		import { start } from "/playdate-arcade-fonts/_app/immutable/start-a2b96d88.js";
+		import { set_public_env, start } from "/playdate-arcade-fonts/_app/immutable/start-8255b779.js";
+
+		set_public_env({});
+
 		start({
 			target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
 			paths: {"base":"/playdate-arcade-fonts","assets":"/playdate-arcade-fonts"},
-			session: {},
 			route: true,
 			spa: true,
 			trailing_slash: "never",
