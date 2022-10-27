@@ -3,7 +3,13 @@ name: gh-pages
 on:
   push:
     branches:
-      - main
+    - main
+    paths:
+    - 'src/**'
+    - 'static/**'
+    - 'package.json'
+    - 'pnpm-lock.yaml'
+    - 'svelte.config.js'
 
 jobs:
   deploy:
