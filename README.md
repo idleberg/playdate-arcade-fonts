@@ -14,8 +14,8 @@ This project is meant as a love letter to the typography of classic arcade games
 
 - all fonts are 8x8 pixels, in most cases with a padding of 1px
 - all fonts only cover basic latin characters
-- most fonts have a limited character range (`[0-9A-Z]`, rarely including lowercase characters)
-- complex fonts with colors have been excluded, some have been added as outlined or filled fonts
+- most fonts have a limited character range (`[0-9A-Z]`), rarely including lowercase characters
+- complex fonts with colors have been excluded, some have been added as outlined or filled variants
 - typographic quality was no criteria for inclusion (and there are many bad fonts!)
 - PNG previews
 
