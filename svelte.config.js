@@ -13,9 +13,6 @@ const config = {
 		}),
 		paths: {
 			base: process.env.GITHUB_WORKFLOW ? '/playdate-arcade-fonts' : undefined,
-		},
-		prerender: {
-			default: true
 		}
 	}
 };
