@@ -6,22 +6,34 @@
 		<meta name="description" content="A collection of bitmap fonts for the Playdate" />
 		<link rel="icon" href="/playdate-arcade-fonts/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta http-equiv="content-security-policy" content="">
-		<link rel="modulepreload" href="/playdate-arcade-fonts/_app/immutable/start-cf9755e5.js">
-		<link rel="modulepreload" href="/playdate-arcade-fonts/_app/immutable/chunks/index-9037593d.js">
-		<link rel="modulepreload" href="/playdate-arcade-fonts/_app/immutable/chunks/singletons-57975a71.js">
+		
+		<link rel="modulepreload" href="/playdate-arcade-fonts/_app/immutable/entry/start.66037f04.js">
+		<link rel="modulepreload" href="/playdate-arcade-fonts/_app/immutable/chunks/scheduler.76a3fff4.js">
+		<link rel="modulepreload" href="/playdate-arcade-fonts/_app/immutable/chunks/singletons.b9be3f34.js">
+		<link rel="modulepreload" href="/playdate-arcade-fonts/_app/immutable/chunks/index.34e3b74f.js">
+		<link rel="modulepreload" href="/playdate-arcade-fonts/_app/immutable/entry/app.adebcc67.js">
+		<link rel="modulepreload" href="/playdate-arcade-fonts/_app/immutable/chunks/index.ec5e137c.js">
 	</head>
 	<body data-sveltekit-prefetch>
 		<div>
-		<script type="module" data-sveltekit-hydrate="45h">
-			import { start } from "/playdate-arcade-fonts/_app/immutable/start-cf9755e5.js";
+			<script>
+				{
+					__sveltekit_qs9us4 = {
+						assets: "/playdate-arcade-fonts",
+						base: "/playdate-arcade-fonts",
+						env: {}
+					};
 
-			start({
-				env: {},
-				paths: {"base":"/playdate-arcade-fonts","assets":"/playdate-arcade-fonts"},
-				target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
-				version: "1672004305563"
-			});
-		</script></div>
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/playdate-arcade-fonts/_app/immutable/entry/start.66037f04.js"),
+						import("/playdate-arcade-fonts/_app/immutable/entry/app.adebcc67.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
 	</body>
 </html>
