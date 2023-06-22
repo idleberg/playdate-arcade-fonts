@@ -10,6 +10,7 @@ on:
     - 'package.json'
     - 'pnpm-lock.yaml'
     - 'svelte.config.js'
+  workflow_dispatch:
 
 jobs:
   deploy:
