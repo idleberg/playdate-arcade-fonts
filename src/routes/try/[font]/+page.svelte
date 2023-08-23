@@ -15,8 +15,7 @@
     let previewArea2x: HTMLElement;
     let previewArea4x: HTMLElement;
 
-    const font = page.content.find(font => font.name === $pageStore.params.font);
-    
+    const font = page.content.find(font => font.name === $pageStore.params.font);    
     const isUppercase = !font?.features.lowercase && font?.features.uppercase;
 
     let transformCasing = {
