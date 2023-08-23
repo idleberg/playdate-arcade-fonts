@@ -4,7 +4,7 @@
     import page from '$meta';
     
     // Components
-    import { Button, Checkbox, Column, Loading, Row, TextInput } from "carbon-components-svelte";
+    import { Button, Checkbox, Column, Loading, Row, Tag, TextInput } from "carbon-components-svelte";
     import Code from "carbon-icons-svelte/lib/Code.svelte";
     import Download from "carbon-icons-svelte/lib/Download.svelte";
     import Tags from '../../../components/Tags.svelte';
@@ -98,7 +98,7 @@
         </Row>
 
         <Row>
-            <Column padding md={16} lg={8}>
+            <Column padding>
                 <TextInput
                     style={`max-height:400px`}
                     placeholder="Enter your text..."
@@ -118,12 +118,23 @@
         {/if}
 
         <Row>
-            <Column padding md={16} lg={8}>
+            <Column padding>
                 <label for="preview-area" class="false bx--label">Output</label>
                 <ul id="preview-area">
-                    <li bind:this={previewArea}></li>
-                    <li class="zoom-2x" bind:this={previewArea2x}></li>
-                    <li class="zoom-4x" bind:this={previewArea4x}></li>
+                    <li>
+                        <Tag type="gray">1x</Tag>
+                        <span bind:this={previewArea}></span>
+                    </li>
+
+                    <li class="zoom-2x">
+                        <Tag type="gray">2x</Tag>
+                        <span bind:this={previewArea2x}></span>
+                    </li>
+
+                    <li class="zoom-4x">
+                        <Tag type="gray">4x</Tag>
+                        <span bind:this={previewArea4x}></span>
+                    </li>
                 </ul>
             </Column>
         </Row>
@@ -154,7 +165,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        height: 155px;
+        height: 200px;
         line-height: var(--size);
         overflow: hidden;
         white-space: nowrap;
