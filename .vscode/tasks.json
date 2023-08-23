@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Vite",
+      "type": "npm",
+      "script": "dev",
+      "presentation": {
+        "clear": true,
+        "focus": false,
+        "group": "developmentGroup",
+        "panel": "dedicated",
+        "showReuseMessage": true
+      }
+    },
+    {
+      "label": "Open Shell",
+      "type": "shell",
+      "command": "eval",
+      "args": ["$SHELL"],
+      "presentation": {
+        "clear": true,
+        "focus": true,
+        "group": "developmentGroup",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Development",
+      "dependsOn": ["Vite", "Open Shell"],
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
