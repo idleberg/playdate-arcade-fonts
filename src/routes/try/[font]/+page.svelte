@@ -22,7 +22,7 @@
         checked: !(font?.features.lowercase && font?.features.uppercase),
         label: `Convert ${isUppercase ? ' lowercase' : 'uppercase'} characters ${isUppercase ? ' to uppercase' : ' to lowercase'}`
     }
-    let textArea: string = defaultText;
+    let textArea: string = isUppercase ? defaultText : defaultText.toLowerCase();
 
     onMount(() => {
         handleChange();
