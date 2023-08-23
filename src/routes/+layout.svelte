@@ -79,6 +79,7 @@
         height: calc(var(--height) * var(--multiplier));
         image-rendering: pixelated;
         width: calc(var(--width) * var(--multiplier));
+        vertical-align: middle;
     }
 
     $row-1: " ", "!", "\\\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/";
