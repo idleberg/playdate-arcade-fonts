@@ -19,7 +19,7 @@
     
     let transformCasing = {
         checked: !(font?.features.lowercase && font?.features.uppercase),
-        label: `Convert mismatching characters ${!font?.features.lowercase && font?.features.uppercase
+        label: `Convert missing characters ${!font?.features.lowercase && font?.features.uppercase
             ? ' to uppercase'
             : ' to lowercase'}`
     }
