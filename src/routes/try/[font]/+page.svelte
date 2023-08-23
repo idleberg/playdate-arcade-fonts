@@ -4,38 +4,66 @@
     import page from '$meta';
     
     // Components
-    import { Button, Column, Loading, Row, TextInput } from "carbon-components-svelte";
+    import { Button, Checkbox, Column, Loading, Row, TextInput } from "carbon-components-svelte";
     import Code from "carbon-icons-svelte/lib/Code.svelte";
     import Download from "carbon-icons-svelte/lib/Download.svelte";
     import Tags from '../../../components/Tags.svelte';
 
+    let defaultText = 'SPHINX OF BLACK QUARTZ JUDGE MY VOW';
+
     let previewArea: HTMLElement;
     let previewArea2x: HTMLElement;
     let previewArea4x: HTMLElement;
-    let defaultText = 'SPHINX OF BLACK QUARTZ JUDGE MY VOW';
+
+    const font = page.content.find(font => font.name === $pageStore.params.font);
+    
+    let transformCasing = {
+        checked: !(font?.features.lowercase && font?.features.uppercase),
+        label: `Convert mismatching characters ${!font?.features.lowercase && font?.features.uppercase
+            ? ' to uppercase'
+            : ' to lowercase'}`
+    }
+    let textArea: string = defaultText;
 
     onMount(() => {
-        handleChange({
-            detail: defaultText,
-        }, font.size)
-    })
+        handleChange();
+    });
     
-    const font = page.content.find(font => font.name === $pageStore.params.font);
     const validCharacters = ' !"#$&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~';
 
-    function handleChange(e, size: string) {
-        const characters = e.detail.split('');
+    function handleChange() {
+        const characters = textArea.split('');
         const html: string[] = [];
 
         characters.forEach((character: string) => {
             if ([...validCharacters].includes(character)) {
-                html.push(`<span data-glyph="${character}" data-size="${size}" arial-label=${character}></span>`);
+                const transformedCharacter = transformCasing.checked ? transform(character) : character;
+
+                html.push(`<span data-glyph="${transformedCharacter}" data-size="${font.size}" arial-label=${transformedCharacter}></span>`);
             }
         });
 
         previewArea.innerHTML = html.join('');
         previewArea2x.innerHTML = html.join('');    
         previewArea4x.innerHTML = html.join('');
+    }
+
+    function transform(input: string) {
+        if (!/[A-Za-z]/.test(input)) {
+            console.warn(`'${input}' is not an alphabetic character`);
+            return input;
+        }
+
+        switch (true) {
+            case font?.features?.lowercase && !font?.features?.uppercase:
+                return input.toLowerCase();
+
+            case !font?.features?.lowercase && font?.features?.uppercase:
+                return input.toUpperCase();
+        
+            default:
+                break;
+        }
     }
 </script>
 
@@ -76,11 +104,19 @@
                     style={`max-height:400px`}
                     placeholder="Enter your text..."
                     labelText="Input"
-                    on:input={e => handleChange(e, font.size)}
-                    value={defaultText}
+                    on:input={() => handleChange()}
+                    bind:value={textArea}
                 />
-            </Column>
+            </Column>                
         </Row>
+
+        {#if !(font.features.lowercase && font.features.uppercase)}
+            <Row>
+                <Column padding>
+                    <Checkbox labelText={transformCasing.label} bind:checked={transformCasing.checked} on:change={() => handleChange()} />
+                </Column>
+            </Row>
+        {/if}
 
         <Row>
             <Column padding md={16} lg={8}>
