@@ -17,11 +17,11 @@
 
     const font = page.content.find(font => font.name === $pageStore.params.font);
     
+    const isUppercase = !font?.features.lowercase && font?.features.uppercase;
+
     let transformCasing = {
         checked: !(font?.features.lowercase && font?.features.uppercase),
-        label: `Convert missing characters ${!font?.features.lowercase && font?.features.uppercase
-            ? ' to uppercase'
-            : ' to lowercase'}`
+        label: `Convert ${isUppercase ? ' lowercase' : 'uppercase'} characters ${isUppercase ? ' to uppercase' : ' to lowercase'}`
     }
     let textArea: string = defaultText;
 
