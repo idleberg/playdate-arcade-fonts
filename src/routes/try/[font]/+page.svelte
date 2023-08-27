@@ -4,7 +4,7 @@
     import page from '$meta';
     
     // Components
-    import { Button, Checkbox, Column, Loading, Row, Tag, TextInput } from "carbon-components-svelte";
+    import {/*Breadcrumb, BreadcrumbItem,*/ Button, Checkbox, Column, Loading, Row, Tag, TextInput } from "carbon-components-svelte";
     import Code from "carbon-icons-svelte/lib/Code.svelte";
     import Download from "carbon-icons-svelte/lib/Download.svelte";
     import Tags from '../../../components/Tags.svelte';
@@ -100,7 +100,6 @@
         <Row>
             <Column padding>
                 <TextInput
-                    style={`max-height:400px`}
                     placeholder="Enter your text..."
                     labelText="Input"
                     on:input={() => handleChange()}
