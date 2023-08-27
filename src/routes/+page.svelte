@@ -51,7 +51,7 @@
     </Column>
 
     <Column padding lg={6} md={4} sm={8}>
-        <Checkbox labelText="Custom Text for Preview" bind:checked={showCustomText} />
+        <Checkbox labelText="Use Custom Text for Preview" bind:checked={showCustomText} />
     </Column>
 </Row>
 
