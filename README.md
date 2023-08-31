@@ -12,12 +12,12 @@ This project is meant as a love letter to the typography of classic arcade games
 
 **Checklist**
 
-- all fonts are 8x8 pixels, in most cases with a padding of 1px
-- all fonts only cover basic latin characters
-- most fonts have a limited character range (`[0-9A-Z]`), rarely including lowercase characters
-- complex fonts with colors have been excluded, some have been added as outlined or filled variants
-- typographic quality was no criteria for inclusion (and there are many bad fonts!)
-- PNG previews
+- [x] all fonts are 8x8 pixels, in most cases with a padding of 1px
+- [x] all fonts only cover basic latin characters
+- [x] most fonts have a limited character range (`[0-9A-Z]`), rarely including lowercase characters
+- [x] complex fonts with colors have been excluded, some have been added as outlined or filled variants
+- [x] typographic quality was no criteria for inclusion (and there are many bad fonts!)
+- [x] PNG previews
 
 I'm currently not interested in contributions of new fonts. However, if you come across mistakes you are welcome to post an [issue](https://github.com/idleberg/playdate-arcade-fonts/issues) or even a [pull request](https://github.com/idleberg/playdate-arcade-fonts/pulls).
 
