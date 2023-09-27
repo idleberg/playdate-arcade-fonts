@@ -27,6 +27,11 @@ I'm currently not interested in contributions of new fonts. However, if you come
 - [ ] better filter options on website
 - [x] option to handle missing characters in details view
 
+## Related
+
+- [Playdate Arcade Fonts Viewer](https://github.com/idleberg/playdate-arcade-fonts-viewer)
+- [Playdate SDK Feed](https://github.com/idleberg/playdate-sdk-feed)
+
 ## License
 
 All included fonts are licensed under a [Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) license. The website and all code in this repository is licensed under [The MIT License](https://opensource.org/licenses/MIT).
