@@ -39,18 +39,6 @@
 
         <AccordionItem open={isDev}>
             <svelte:fragment slot="title">
-              <strong>Why are some fonts incomplete?</strong>
-            </svelte:fragment>
-
-            <p>
-                This question can only be answered by the original designers of these fonts. Drawing only the characters used by a game, saving diskspace,
-                limited knowledge of Western typography. My guess is as good as your's. However, it <em>seems</em> to me that the maker of the book left out
-                some characters on purpose, e.g. some spread page highlight the quality of a font at the cost of completeness.
-            </p>
-        </AccordionItem>
-
-        <AccordionItem open={isDev}>
-            <svelte:fragment slot="title">
               <strong>When is a font tagged as incomplete?</strong>
             </svelte:fragment>
 
@@ -58,6 +46,18 @@
                 Fonts are tagged as incomplete, when they lack one or more characters in their supported character range. So when a font supports uppercase letters,
                 but misses single ones, it's incomplete. Font are <em>not</em> tagged as incomplete, when they support the full range of uppercase characters,
                 but have no lowercase characters.
+            </p>
+        </AccordionItem>
+
+        <AccordionItem open={isDev}>
+            <svelte:fragment slot="title">
+              <strong>Why are some fonts incomplete?</strong>
+            </svelte:fragment>
+
+            <p>
+                This question can only be answered by the original designers of these fonts. Drawing only the characters used by a game, saving diskspace,
+                limited knowledge of Western typography. My guess is as good as your's. However, it <em>seems</em> to me that the maker of the book left out
+                some characters on purpose, e.g. some spread page highlight the quality of a font at the cost of completeness.
             </p>
         </AccordionItem>
 
