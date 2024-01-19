@@ -47,6 +47,15 @@
         previewArea4x.innerHTML = html.join('');
     }
 
+    function handleBlur() {
+        if (textArea.trim().length) {
+            return;
+        }
+
+        textArea = defaultText;
+        handleChange();
+    }
+
     function transform(input: string) {
         if (!/[A-Za-z]/.test(input)) {
             console.warn(`'${input}' is not an alphabetic character`);
@@ -103,6 +112,7 @@
                     placeholder="Enter your text..."
                     labelText="Input"
                     on:input={() => handleChange()}
+                    on:blur={() => handleBlur()}
                     bind:value={textArea}
                 />
             </Column>                
