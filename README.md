@@ -1,7 +1,5 @@
 # 👾 playdate-arcade-fonts
 
-*This project is work-in-progress*
-
 ## TL;DR
 
 [Just show me the fonts!](https://idleberg.github.io/playdate-arcade-fonts)
