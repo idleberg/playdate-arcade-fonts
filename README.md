@@ -25,6 +25,10 @@ I'm currently not interested in contributions of new fonts. However, if you come
 - [ ] better filter options on website
 - [x] option to handle missing characters in details view
 
+## FAQ
+
+Find [frequently asked questions](https://idleberg.github.io/playdate-arcade-fonts/faq/) on the website for this project.
+
 ## Related
 
 - [Playdate Arcade Fonts Viewer](https://github.com/idleberg/playdate-arcade-fonts-viewer)
