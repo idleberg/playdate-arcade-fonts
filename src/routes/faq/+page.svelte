@@ -98,6 +98,18 @@
                 license.
             </p>
         </AccordionItem>
+
+        <AccordionItem open={isDev}>
+            <svelte:fragment slot="title">
+              <strong>Can I use these fonts for x?</strong>
+            </svelte:fragment>
+
+            <p>
+                If you want to use these fonts into non-Playdate projects, you might be interested in
+                <OutboundLink inline href="https://github.com/kreativekorp/bitsnpicas">Bits'N'Picas</OutboundLink>
+                a tool that can open Playdate fonts and export them to a variety of formats.
+            </p>
+        </AccordionItem>
     </Accordion>
 </Column>
 </Row>
