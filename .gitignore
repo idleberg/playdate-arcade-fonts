@@ -3,6 +3,7 @@ node_modules/
 
 # Build
 /.cache
+/.netlify
 /.svelte-kit
 /build
 /package
