@@ -1,3 +1,4 @@
+import auto from '@sveltejs/adapter-auto';
 import ghPages from '@sveltejs/adapter-static';
 import netlify from '@sveltejs/adapter-netlify';
 import { sveltePreprocess } from 'svelte-preprocess';
@@ -11,20 +12,31 @@ const config = {
 	}),
 
 	kit: {
-		adapter: process.env.BUILD_ENV === 'netlify' ?
-    		netlify({
-          edge: false,
-          prerender: {
-            force: true
-          }
-        }) :
-        ghPages({
-          fallback: '404.html'
-        }),
+		adapter: getAdapter(),
 		paths: {
 			base: process.env.GITHUB_WORKFLOW ? '/playdate-arcade-fonts' : undefined,
 		}
 	}
 };
+
+function getAdapter() {
+  switch(process.env.BUILD_ENV) {
+    case 'gh-pages':
+      return ghPages({
+        fallback: '404.html'
+      });
+
+    case 'netlify':
+      return netlify({
+        edge: false,
+        prerender: {
+          force: true
+        }
+      });
+
+    default:
+      return auto();
+  }
+}
 
 export default config;
