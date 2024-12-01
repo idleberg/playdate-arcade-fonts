@@ -5,6 +5,7 @@ on:
     branches:
     - main
     paths:
+    - '.github/workflows/*'
     - 'src/**'
     - 'static/**'
     - 'package.json'
