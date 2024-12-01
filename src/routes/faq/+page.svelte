@@ -14,9 +14,11 @@
 <Column padding>
     <Accordion>
         <AccordionItem open={isDev}>
-            <svelte:fragment slot="title">
-              <strong>Where are these fonts taken from?</strong>
-            </svelte:fragment>
+            {#snippet title()}
+              
+                <strong>Where are these fonts taken from?</strong>
+              
+              {/snippet}
 
             <p>
                 All included fonts where hand-drawn from Toshi Omagari's magnificent book
@@ -26,9 +28,11 @@
         </AccordionItem>
 
         <AccordionItem open={isDev}>
-            <svelte:fragment slot="title">
-              <strong>Who are these fonts for?</strong>
-            </svelte:fragment>
+            {#snippet title()}
+              
+                <strong>Who are these fonts for?</strong>
+              
+              {/snippet}
 
             <p>
                 The fonts have created with Panic's
@@ -38,9 +42,11 @@
         </AccordionItem>
 
         <AccordionItem open={isDev}>
-            <svelte:fragment slot="title">
-              <strong>When is a font tagged as incomplete?</strong>
-            </svelte:fragment>
+            {#snippet title()}
+              
+                <strong>When is a font tagged as incomplete?</strong>
+              
+              {/snippet}
 
             <p>
                 Fonts are tagged as incomplete, when they lack one or more characters in their supported character range. So when a font supports uppercase letters,
@@ -50,9 +56,11 @@
         </AccordionItem>
 
         <AccordionItem open={isDev}>
-            <svelte:fragment slot="title">
-              <strong>Why are some fonts incomplete?</strong>
-            </svelte:fragment>
+            {#snippet title()}
+              
+                <strong>Why are some fonts incomplete?</strong>
+              
+              {/snippet}
 
             <p>
                 This question can only be answered by the original designers of these fonts. Drawing only the characters used by a game, saving diskspace,
@@ -62,9 +70,11 @@
         </AccordionItem>
 
         <AccordionItem open={isDev}>
-            <svelte:fragment slot="title">
-              <strong>Why are some fonts missing?</strong>
-            </svelte:fragment>
+            {#snippet title()}
+              
+                <strong>Why are some fonts missing?</strong>
+              
+              {/snippet}
 
             <p>
                 If you know the book these fonts were taken from, you might wonder why some fonts are missing entirely. That's mostly the case when a font makes
@@ -75,9 +85,11 @@
         </AccordionItem>
 
         <AccordionItem open={isDev}>
-            <svelte:fragment slot="title">
-              <strong>What's an unused font?</strong>
-            </svelte:fragment>
+            {#snippet title()}
+              
+                <strong>What's an unused font?</strong>
+              
+              {/snippet}
 
             <p>
                 A font considered for a game that didn't make it into the final product. Presumably, they ended
@@ -88,9 +100,11 @@
         </AccordionItem>
 
         <AccordionItem open={isDev}>
-            <svelte:fragment slot="title">
-              <strong>How are these fonts licensed?</strong>
-            </svelte:fragment>
+            {#snippet title()}
+              
+                <strong>How are these fonts licensed?</strong>
+              
+              {/snippet}
 
             <p>
                 All included fonts are part of the public domain and as such they are available under the terms of the
@@ -100,9 +114,11 @@
         </AccordionItem>
 
         <AccordionItem open={isDev}>
-            <svelte:fragment slot="title">
-              <strong>Can I use these fonts for x?</strong>
-            </svelte:fragment>
+            {#snippet title()}
+              
+                <strong>Can I use these fonts for x?</strong>
+              
+              {/snippet}
 
             <p>
                 If you want to use these fonts into non-Playdate projects, you might be interested in

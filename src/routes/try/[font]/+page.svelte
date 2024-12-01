@@ -11,18 +11,18 @@
 
     let defaultText = 'SPHINX OF BLACK QUARTZ JUDGE MY VOW';
 
-    let previewArea: HTMLElement;
-    let previewArea2x: HTMLElement;
-    let previewArea4x: HTMLElement;
+    let previewArea: HTMLElement = $state();
+    let previewArea2x: HTMLElement = $state();
+    let previewArea4x: HTMLElement = $state();
 
     const font = page.content.find(font => font.name === $pageStore.params.font);    
     const isUppercase = !font?.features.lowercase && font?.features.uppercase;
 
-    let transformCasing = {
+    let transformCasing = $state({
         checked: !(font?.features.lowercase && font?.features.uppercase),
         label: `Convert ${isUppercase ? ' lowercase' : 'uppercase'} characters ${isUppercase ? ' to uppercase' : ' to lowercase'}`
-    }
-    let textArea: string = isUppercase ? defaultText : defaultText.toLowerCase();
+    })
+    let textArea: string = $state(isUppercase ? defaultText : defaultText.toLowerCase());
 
     onMount(() => {
         handleChange();

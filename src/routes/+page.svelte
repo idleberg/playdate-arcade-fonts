@@ -8,11 +8,12 @@
     import Tags from '$components/Tags.svelte';
     import View from "carbon-icons-svelte/lib/View.svelte";
 
-    let searchValue: string = '';
-    let showCustomText: boolean = false;
-    $: customText = '';
-    let isLoading = true;
-    let publicFonts: Record<string, any>[] = [];
+    let searchValue: string = $state('');
+    let showCustomText: boolean = $state(false);
+    let customText = $state('');
+    
+    let isLoading = $state(true);
+    let publicFonts: Record<string, any>[] = $state([]);
     let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
     let numbers = "0123456789".split("")
 

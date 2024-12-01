@@ -9,6 +9,11 @@
     import { Grid } from "carbon-components-svelte";
     import Header from '$components/Header.svelte';
     import Footer from '$components/Footer.svelte';
+    interface Props {
+        children?: import('svelte').Snippet;
+    }
+
+    let { children }: Props = $props();
     
     onMount(() => {
         store.set(sortByKey(page.content).filter(item => item.public));
@@ -18,7 +23,7 @@
 <Grid fullWidth>
     <Header />
     
-    <slot></slot>
+    {@render children?.()}
 
     <Footer />
 </Grid>

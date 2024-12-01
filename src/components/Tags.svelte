@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
     import { Tag } from "carbon-components-svelte";
 
-    export let font;
+    let { font } = $props();
 </script>
 
 <div>
