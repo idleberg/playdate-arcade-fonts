@@ -1,4 +1,5 @@
-import adapter from '@sveltejs/adapter-static';
+import ghPages from '@sveltejs/adapter-static';
+import netlify from '@sveltejs/adapter-netlify';
 import sveltePreprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -10,9 +11,16 @@ const config = {
 	}),
 
 	kit: {
-		adapter: adapter({
-			fallback: '404.html'
-		}),
+		adapter: process.env.BUILD_ENV === 'netlify' ?
+    		adapter({
+          edge: false,
+          prerender: {
+            force: true
+          }
+        }) :
+        ghPages({
+          fallback: '404.html'
+        }),
 		paths: {
 			base: process.env.GITHUB_WORKFLOW ? '/playdate-arcade-fonts' : undefined,
 		}
