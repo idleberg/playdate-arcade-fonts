@@ -23,7 +23,8 @@ function getAdapter() {
   switch(process.env.BUILD_ENV) {
     case 'github':
       return ghPages({
-        fallback: '404.html'
+        fallback: '404.html',
+        precompress: true,
       });
 
     case 'netlify':
