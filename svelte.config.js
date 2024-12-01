@@ -1,6 +1,6 @@
 import ghPages from '@sveltejs/adapter-static';
 import netlify from '@sveltejs/adapter-netlify';
-import sveltePreprocess from 'svelte-preprocess';
+import { sveltePreprocess } from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -12,7 +12,7 @@ const config = {
 
 	kit: {
 		adapter: process.env.BUILD_ENV === 'netlify' ?
-    		adapter({
+    		netlify({
           edge: false,
           prerender: {
             force: true
