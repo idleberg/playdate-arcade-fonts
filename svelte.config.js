@@ -21,7 +21,7 @@ const config = {
 
 function getAdapter() {
   switch(process.env.BUILD_ENV) {
-    case 'gh-pages':
+    case 'github':
       return ghPages({
         fallback: '404.html'
       });
