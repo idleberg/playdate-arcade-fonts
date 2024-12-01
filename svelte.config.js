@@ -29,10 +29,7 @@ function getAdapter() {
 
     case 'netlify':
       return netlify({
-        edge: false,
-        prerender: {
-          force: true
-        }
+        edge: true,
       });
 
     default:
