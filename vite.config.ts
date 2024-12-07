@@ -1,3 +1,4 @@
+import { defineConfig, loadEnv } from 'vite';
 import { resolve } from 'node:path';
 import { sveltekit } from '@sveltejs/kit/vite';
 import * as v from 'valibot';
@@ -14,22 +15,23 @@ const schema = v.object({
   ),
 });
 
-/** @type {import('vite').UserConfig} */
-const config = {
-  plugins: [
-    mkcert(),
-    valibot(schema, {
-      ignoreEnvPrefix: true,
-      transformValues: true,
-    }),
-    sveltekit()
-  ],
-  resolve: {
-    alias: {
-      $components: resolve('./src/components'),
-      $meta: resolve('./src/meta.json'),
-    }
-  }
-};
+export default defineConfig(({ mode }) => {
+  loadEnv(mode, process.cwd(), '');
 
-export default config;
+  return {
+    plugins: [
+      mkcert(),
+      valibot(schema, {
+        ignoreEnvPrefix: true,
+        transformValues: true,
+      }),
+      sveltekit()
+    ],
+    resolve: {
+      alias: {
+        $components: resolve('./src/components'),
+        $meta: resolve('./src/meta.json'),
+      }
+    }
+  };
+});
