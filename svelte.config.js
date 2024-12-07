@@ -1,6 +1,7 @@
 import auto from '@sveltejs/adapter-auto';
 import ghPages from '@sveltejs/adapter-static';
 import netlify from '@sveltejs/adapter-netlify';
+import { resolve } from 'node:path';
 import { sveltePreprocess } from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -15,6 +16,12 @@ const config = {
 		adapter: getAdapter(),
 		paths: {
 			base: process.env.GITHUB_WORKFLOW ? '/playdate-arcade-fonts' : undefined,
+		},
+    alias: {
+			$: resolve('./src'),
+			$components: resolve('./src/components'),
+			$meta: resolve('./src/meta'),
+			$stores: resolve('./src/stores')
 		}
 	}
 };
