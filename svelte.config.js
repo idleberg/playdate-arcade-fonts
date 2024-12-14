@@ -27,14 +27,14 @@ const config = {
 };
 
 function getAdapter() {
-  switch(process.env.BUILD_ENV) {
-    case 'github':
+  switch(true) {
+    case process.env.GITHUB_WORKFLOW:
       return ghPages({
         fallback: '404.html',
         precompress: true,
       });
 
-    case 'netlify':
+    case process.env.NETLIFY:
       return netlify({
         edge: true,
       });

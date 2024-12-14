@@ -7,12 +7,6 @@ import valibot from 'vite-plugin-valibot-env';
 
 const schema = v.object({
   VITE_HOMEPAGE: v.pipe(v.string(), v.url()),
-  BUILD_ENV: v.optional(
-    v.union([
-      v.literal('github'),
-      v.literal('netlify'),
-    ])
-  ),
 });
 
 export default defineConfig(({ mode }) => {
