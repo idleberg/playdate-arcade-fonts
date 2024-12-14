@@ -32,7 +32,8 @@ jobs:
       - name: Build
         run: bun run build
         env:
-          VITE_HOMEPAGE: https://idleberg.github.io/playdate-arcade-fonts
+          BASE_PATH: '/${{ github.event.repository.name }}'
+          VITE_HOMEPAGE: https://idleberg.github.io/${{ github.event.repository.name }}
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1

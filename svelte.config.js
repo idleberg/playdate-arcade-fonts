@@ -15,7 +15,7 @@ const config = {
 	kit: {
 		adapter: getAdapter(),
 		paths: {
-			base: process.env.GITHUB_WORKFLOW ? '/playdate-arcade-fonts' : undefined,
+			base: process.env.GITHUB_WORKFLOW ? process.env.BASE_PATH : undefined,
 		},
     alias: {
 			$: resolve('./src'),
