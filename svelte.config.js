@@ -28,13 +28,13 @@ const config = {
 
 function getAdapter() {
   switch(true) {
-    case process.env.GITHUB_WORKFLOW:
+    case Boolean(process.env.GITHUB_WORKFLOW):
       return ghPages({
         fallback: '404.html',
         precompress: true,
       });
 
-    case process.env.NETLIFY:
+    case Boolean(process.env.NETLIFY):
       return netlify({
         edge: true,
       });
