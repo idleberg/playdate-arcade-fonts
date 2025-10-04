@@ -11,7 +11,7 @@
     let searchValue: string = $state('');
     let showCustomText: boolean = $state(false);
     let customText = $state('');
-    
+
     let isLoading = $state(true);
     let publicFonts: Record<string, any>[] = $state([]);
     let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
@@ -73,7 +73,7 @@
                         <Tags {font} />
 
                         <Link href={`${import.meta.env.VITE_HOMEPAGE}/try/${encodeURIComponent(font.name)}`} aria-label={`Preview the ${font.name} bitmap font`}>
-                            <div class="preview zoom-4x" style={`--backgroundImage: url("${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeURIComponent(font.name)}.png")`}>
+                            <div class="preview zoom-4x" style={`--backgroundImage: url('${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeURIComponent(font.name)}.png')`}>
                                 {#if showCustomText && customText?.length}
                                     {#each customText.split('') as character}
                                         <span data-glyph={character} data-size={font.size} aria-label={character}></span>
@@ -84,14 +84,14 @@
                                             <span data-glyph={character} data-size={font.size} aria-label={character}></span>
                                         {/each}
                                     {/if}
-                                    
+
                                     <!-- {#if font.features.lowercase}
                                         <br />
                                         {#each letters as character}
                                             <span data-glyph={character.toLowerCase()} data-size={font.size} aria-label={character.toLowerCase()}></span>
                                         {/each}
                                     {/if} -->
-                                    
+
                                     {#if font.features.digits}
                                         <br />
                                         {#each numbers as character}
