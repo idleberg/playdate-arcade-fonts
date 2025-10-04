@@ -2,7 +2,7 @@
     import { onMount } from "svelte";
     import { page as pageStore } from '$app/stores';
     import page from '$meta';
-    
+
     // Components
     import {/*Breadcrumb, BreadcrumbItem,*/ Button, Checkbox, Column, Loading, Row, Tag, TextInput } from "carbon-components-svelte";
     import Code from "carbon-icons-svelte/lib/Code.svelte";
@@ -15,7 +15,7 @@
     let previewArea2x: HTMLElement = $state();
     let previewArea4x: HTMLElement = $state();
 
-    const font = page.content.find(font => font.name === $pageStore.params.font);    
+    const font = page.content.find(font => font.name === $pageStore.params.font);
     const isUppercase = !font?.features.lowercase && font?.features.uppercase;
 
     let transformCasing = $state({
@@ -27,7 +27,7 @@
     onMount(() => {
         handleChange();
     });
-    
+
     const validCharacters = ' !"#$&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~';
 
     function handleChange() {
@@ -43,7 +43,7 @@
         });
 
         previewArea.innerHTML = html.join('');
-        previewArea2x.innerHTML = html.join('');    
+        previewArea2x.innerHTML = html.join('');
         previewArea4x.innerHTML = html.join('');
     }
 
@@ -68,7 +68,7 @@
 
             case !font?.features?.lowercase && font?.features?.uppercase:
                 return input.toUpperCase();
-        
+
             default:
                 break;
         }
@@ -89,7 +89,7 @@
 </svelte:head>
 
 {#if font?.name}
-    <div style={font?.name && `--backgroundImage: url("${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeURIComponent(font.name)}.png")`}>
+    <div style={font?.name && `--backgroundImage: url('${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeURIComponent(font.name)}.png')`}>
         <!-- <Row>
             <Column padding>
                 <Breadcrumb noTrailingSlash>
@@ -99,7 +99,7 @@
                 </Breadcrumb>
             </Column>
         </Row> -->
-        
+
         <Row>
             <Column padding>
                 <Tags {font} />
@@ -115,7 +115,7 @@
                     on:blur={() => handleBlur()}
                     bind:value={textArea}
                 />
-            </Column>                
+            </Column>
         </Row>
 
         {#if !(font.features.lowercase && font.features.uppercase)}
@@ -178,7 +178,7 @@
         line-height: var(--size);
         overflow: hidden;
         white-space: nowrap;
-        
+
         li {
             padding: 1rem;
             width: 100%;
