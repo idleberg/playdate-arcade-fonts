@@ -1,5 +1,6 @@
 <script lang="ts">
     import store from '$lib/store';
+    import { encodeName } from '$lib/util';
     import { onMount } from 'svelte';
 
     // Components
@@ -73,7 +74,7 @@
                         <Tags {font} />
 
                         <Link href={`${import.meta.env.VITE_HOMEPAGE}/try/${encodeURIComponent(font.name)}`} aria-label={`Preview the ${font.name} bitmap font`}>
-                            <div class="preview zoom-4x" style={`--backgroundImage: url('${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeURIComponent(font.name)}.png')`}>
+                            <div class="preview zoom-4x" style={`--backgroundImage: url('${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeName(font.name)}.png')`}>
                                 {#if showCustomText && customText?.length}
                                     {#each customText.split('') as character}
                                         <span data-glyph={character} data-size={font.size} aria-label={character}></span>

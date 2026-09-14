@@ -2,6 +2,7 @@
     import { onMount } from "svelte";
     import { page as pageStore } from '$app/stores';
     import page from '$meta';
+    import { encodeName } from '$lib/util';
 
     // Components
     import {/*Breadcrumb, BreadcrumbItem,*/ Button, Checkbox, Column, Loading, Row, Tag, TextInput } from "carbon-components-svelte";
@@ -80,16 +81,16 @@
   <meta property="og:title" content="{font?.name ? `${font.name} | Playdate Arcade Fonts` : 'Playdate Arcade Fonts'}" />
   <meta property="og:description" content="A collection of bitmap fonts for the Playdate, the tiny handheld game system from Panic." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content={font?.name ? `${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeURIComponent(font.name)}.png` : ''} />
+  <meta property="og:image" content={font?.name ? `${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeName(font.name)}.png` : ''} />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@idleberg" />
   <meta name="twitter:title" content={font?.name ? `${font.name} | Playdate Arcade Fonts` : 'Playdate Arcade Fonts'} />
   <meta name="twitter:description" content="A collection of bitmap fonts for the Playdate, the tiny handheld game system from Panic." />
-  <meta name="twitter:image" content={font?.name ? `${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeURIComponent(font.name)}.png` : ''} />
+  <meta name="twitter:image" content={font?.name ? `${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeName(font.name)}.png` : ''} />
 </svelte:head>
 
 {#if font?.name}
-    <div style={font?.name && `--backgroundImage: url('${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeURIComponent(font.name)}.png')`}>
+    <div style={font?.name && `--backgroundImage: url('${import.meta.env.VITE_HOMEPAGE}/sprites/${encodeName(font.name)}.png')`}>
         <!-- <Row>
             <Column padding>
                 <Breadcrumb noTrailingSlash>
